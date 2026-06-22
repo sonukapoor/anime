@@ -9,13 +9,13 @@
   <meta name="description" content="A fast, multipurpose and lightweight JavaScript animation library">
   <meta property="og:title" content="Stagger grid axis | Stagger parameters | stagger() | Utilities | Documentation | Anime.js | JavaScript Animation Engine">
   <meta property="og:url" content="/documentation/utilities/stagger/stagger-parameters/stagger-grid-axis">
-  <meta property="og:image" content="https://animejs.com/media/pages/documentation/utilities/stagger/stagger-parameters/stagger-grid-axis/2a589aaa94-1777477888/generated-og-image.en.png">
+  <meta property="og:image" content="https://animejs.com/media/pages/documentation/utilities/stagger/stagger-parameters/stagger-grid-axis/2a589aaa94-1782139872/generated-og-image.en.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="600">
   <meta property="og:description" content="A fast, multipurpose and lightweight JavaScript animation library">
   <meta name="twitter:title" content="Stagger grid axis | Stagger parameters | stagger() | Utilities | Documentation | Anime.js | JavaScript Animation Engine">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://animejs.com/media/pages/documentation/utilities/stagger/stagger-parameters/stagger-grid-axis/2a589aaa94-1777477888/generated-og-image.en.png">
+  <meta name="twitter:image" content="https://animejs.com/media/pages/documentation/utilities/stagger/stagger-parameters/stagger-grid-axis/2a589aaa94-1782139872/generated-og-image.en.png">
   <meta name="twitter:description" content="A fast, multipurpose and lightweight JavaScript animation library">
   <link href="/assets/css/styles.css?v=4.4.1" rel="stylesheet"></head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-16LTPBS8QC"></script>
@@ -1643,6 +1643,10 @@
       <a class="docs-link" title="Stagger total" href="/documentation/utilities/stagger/stagger-parameters/stagger-total" data-id="utilities-stagger-stagger-parameters-stagger-total">
         total                              </a>
                 </li>
+          <li class="docs-nav-item" data-color="11">
+      <a class="docs-link" title="Stagger jitter" href="/documentation/utilities/stagger/stagger-parameters/stagger-jitter" data-id="utilities-stagger-stagger-parameters-stagger-jitter">
+        jitter                        <span class="badge">NEW</span>      </a>
+                </li>
   </ul>
           </li>
   </ul>
@@ -1907,6 +1911,38 @@
                 </li>
   </ul>
           </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Adapters" href="/documentation/adapters" data-id="adapters">
+        Adapters                        <span class="badge">NEW</span>      </a>
+                  <ul class="docs-nav-item">
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js adapter" href="/documentation/adapters/threejs-adapter" data-id="adapters-threejs-adapter">
+        Three.js                        <span class="badge">NEW</span>      </a>
+                  <ul class="docs-nav-item">
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js object properties" href="/documentation/adapters/threejs-adapter/threejs-object-property-adapter" data-id="adapters-threejs-adapter-threejs-object-property-adapter">
+        Object properties                              </a>
+                </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js extended transforms" href="/documentation/adapters/threejs-adapter/threejs-transforms-adapter" data-id="adapters-threejs-adapter-threejs-transforms-adapter">
+        Extended transforms                              </a>
+                </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js materials and uniforms" href="/documentation/adapters/threejs-adapter/materials-and-uniforms" data-id="adapters-threejs-adapter-materials-and-uniforms">
+        Materials & uniforms                              </a>
+                </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js instanced meshes" href="/documentation/adapters/threejs-adapter/threejs-instanced-and-batched-meshes" data-id="adapters-threejs-adapter-threejs-instanced-and-batched-meshes">
+        Instanced meshes                              </a>
+                </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js common gotchas" href="/documentation/adapters/threejs-adapter/threejs-adapter-common-gotchas" data-id="adapters-threejs-adapter-threejs-adapter-common-gotchas">
+        Common gotchas                              </a>
+                </li>
+  </ul>
+          </li>
+  </ul>
+          </li>
   </ul>
     </nav>
   </aside>
@@ -1960,8 +1996,15 @@
 <td><code>'y'</code></td>
 <td>Restrict the direction to the y axis</td>
 </tr>
+<tr>
+<td><code>'z'</code></td>
+<td>Restrict the direction to the z axis (3D grids only)</td>
+</tr>
 </tbody>
-</table>      </div>
+</table>
+<div class="block info">
+<p>The <code>'z'</code> axis applies only to 3D grids, useful when animating in 3D space with the <a href="/documentation/adapters/threejs-adapter" title="Three.js adapter">Three.js adapter</a>.</p>
+</div>      </div>
                   <!-- <a href="/panel/pages/documentation+utilities+stagger+stagger-parameters+stagger-grid-axis" target="_blank">Edit Page</a> -->
       <section class="code-preview" data-color="11">
         <div class="code-preview-content">
@@ -1976,7 +2019,7 @@
             </nav>
           </header>
           <div class="code-editor">
-            <pre class="is-active" data-language="js"><code class="hljs language-javascript">import { animate, stagger, utils } from 'animejs';
+                        <pre class="is-active" data-language="js"><code class="hljs language-javascript">import { animate, stagger, utils } from 'animejs';
 
 const grid = [11, 4];
 const $squares = utils.$(&#039;.square&#039;);

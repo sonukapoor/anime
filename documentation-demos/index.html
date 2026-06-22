@@ -36,6 +36,8 @@ window.demos['docs'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -88,6 +90,8 @@ window.demos['getting-started'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -148,6 +152,8 @@ window.demos['getting-started-installation'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $caret ] = utils.$('.caret');
 const [ $el ] = utils.$('code');
@@ -247,6 +253,8 @@ window.demos['getting-started-module-imports'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $caret ] = utils.$('.caret');
 const [ $el ] = utils.$('code');
@@ -355,6 +363,8 @@ window.demos['getting-started-using-with-vanilla-js'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $logo ] = utils.$('.logo.js');
 const [ $button ] = utils.$('button');
@@ -459,6 +469,8 @@ window.demos['getting-started-using-with-react'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $logo ] = utils.$('.logo');
 const [ $button ] = utils.$('button');
@@ -572,6 +584,8 @@ window.demos['timer'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $time, $count ] = utils.$('.value');
 
@@ -634,6 +648,8 @@ window.demos['timer-timer-playback-settings'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -700,6 +716,8 @@ window.demos['timer-timer-playback-settings-delay'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $time ] = utils.$('.time');
 
@@ -773,6 +791,8 @@ window.demos['timer-timer-playback-settings-duration'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $time ] = utils.$('.time');
 
@@ -858,6 +878,8 @@ window.demos['timer-timer-playback-settings-loop'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $loops ] = utils.$('.loops');
 const [ $time ] = utils.$('.time');
@@ -948,6 +970,8 @@ window.demos['timer-timer-playback-settings-playback-loopdelay'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $loops ] = utils.$('.loops');
 const [ $time ] = utils.$('.time');
@@ -1039,6 +1063,8 @@ window.demos['timer-timer-playback-settings-alternate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $loops ] = utils.$('.loops');
 const [ $time ] = utils.$('.time');
@@ -1130,6 +1156,8 @@ window.demos['timer-timer-playback-settings-reversed'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $iterationTime ] = utils.$('.iteration-time');
 const [ $currentTime ] = utils.$('.current-time');
@@ -1218,6 +1246,8 @@ window.demos['timer-timer-playback-settings-autoplay'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $time ] = utils.$('.time');
 const [ $playButton ] = utils.$('.play');
@@ -1321,6 +1351,8 @@ window.demos['timer-timer-playback-settings-framerate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $range ] = utils.$('.range');
 const [ $fps ] = utils.$('.fps');
@@ -1428,6 +1460,8 @@ window.demos['timer-timer-playback-settings-playbackrate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $range ] = utils.$('.range');
 const [ $speed ] = utils.$('.speed');
@@ -1499,6 +1533,8 @@ window.demos['timer-timer-callbacks'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -1577,6 +1613,8 @@ window.demos['timer-timer-callbacks-onbegin'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $status ] = utils.$('.status');
 const [ $time ] = utils.$('.time');
@@ -1669,6 +1707,8 @@ window.demos['timer-timer-callbacks-oncomplete'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $status ] = utils.$('.status');
 const [ $time ] = utils.$('.time');
@@ -1756,6 +1796,8 @@ window.demos['timer-timer-callbacks-onupdate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $updates ] = utils.$('.updates');
 const [ $time ] = utils.$('.time');
@@ -1846,6 +1888,8 @@ window.demos['timer-timer-callbacks-onloop'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $loops ] = utils.$('.loops');
 const [ $time ] = utils.$('.time');
@@ -1948,6 +1992,8 @@ window.demos['timer-timer-callbacks-onpause'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $resumeButton, $pauseButton ] = utils.$('.button');
 const [ $paused ] = utils.$('.paused');
@@ -2046,6 +2092,8 @@ window.demos['timer-timer-callbacks-then'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $status ] = utils.$('.status');
 const [ $time ] = utils.$('.time');
@@ -2107,6 +2155,8 @@ window.demos['timer-timer-methods'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -2183,6 +2233,8 @@ window.demos['timer-timer-methods-play'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $playButton ] = utils.$('.play');
 const [ $time ] = utils.$('.time');
@@ -2274,6 +2326,8 @@ window.demos['timer-timer-methods-reverse'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $reverseButton ] = utils.$('.reverse');
 const [ $time ] = utils.$('.time');
@@ -2364,6 +2418,8 @@ window.demos['timer-timer-methods-pause'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $pauseButton ] = utils.$('.pause');
 const [ $time ] = utils.$('.time');
@@ -2453,6 +2509,8 @@ window.demos['timer-timer-methods-restart'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $restartButton ] = utils.$('.restart');
 const [ $time ] = utils.$('.time');
@@ -2542,6 +2600,8 @@ window.demos['timer-timer-methods-alternate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $alternateButton ] = utils.$('.button');
 const [ $iterationTime ] = utils.$('.iteration-time');
@@ -2639,6 +2699,8 @@ window.demos['timer-timer-methods-resume'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $resumeButton, $pauseButton, $alternateButton ] = utils.$('.button');
 const [ $time ] = utils.$('.time');
@@ -2736,6 +2798,8 @@ window.demos['timer-timer-methods-complete'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $completeButton ] = utils.$('.complete');
 const [ $time ] = utils.$('.time');
@@ -2826,6 +2890,8 @@ window.demos['timer-timer-methods-reset'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $time ] = utils.$('.time');
 const [ $reset ] = utils.$('.button');
@@ -2920,6 +2986,8 @@ window.demos['timer-timer-methods-cancel'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $playButton ] = utils.$('.play');
 const [ $cancelButton ] = utils.$('.cancel');
@@ -3013,6 +3081,8 @@ window.demos['timer-timer-methods-revert'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $revertButton ] = utils.$('.revert');
 const [ $time ] = utils.$('.time');
@@ -3107,6 +3177,8 @@ window.demos['timer-timer-methods-seek'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $range ] = utils.$('.range');
 const [ $playPauseButton ] = utils.$('.play-pause');
@@ -3234,6 +3306,8 @@ window.demos['timer-timer-methods-stretch'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $range ] = utils.$('.range');
 const [ $duration ] = utils.$('.duration');
@@ -3305,6 +3379,8 @@ window.demos['timer-timer-properties'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -3365,6 +3441,8 @@ window.demos['animation'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const { chars } = splitText('h2', { words: false, chars: true });
 
@@ -3436,6 +3514,8 @@ window.demos['animation-targets'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -3504,6 +3584,8 @@ window.demos['animation-targets-css-selector'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', { x: '17rem' });
 animate('#css-selector-id', { rotate: '1turn' });
@@ -3580,6 +3662,8 @@ window.demos['animation-targets-dom-elements'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const $demo = document.querySelector('#selector-demo');
 const $squares = $demo.querySelectorAll('.square');
@@ -3642,6 +3726,8 @@ window.demos['animation-targets-javascript-objects'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $log ] = utils.$('code');
 
@@ -3715,6 +3801,8 @@ window.demos['animation-targets-array-of-targets'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $log ] = utils.$('code');
 
@@ -3777,6 +3865,8 @@ window.demos['animation-animatable-properties'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -3833,6 +3923,8 @@ window.demos['animation-animatable-properties-css-properties'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   left: 'calc(7.75rem * 2)',
@@ -3906,6 +3998,8 @@ window.demos['animation-animatable-properties-css-transforms'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '15rem', // TranslateX shorthand
@@ -3998,6 +4092,8 @@ window.demos['animation-animatable-properties-css-variables'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 // Assign the CSS variables to the properties of the animated elements
 utils.set('.square', {
@@ -4071,6 +4167,8 @@ window.demos['animation-animatable-properties-javascript-object-properties'] = f
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const myObject = {
   number: 1337,
@@ -4145,6 +4243,8 @@ window.demos['animation-animatable-properties-html-attributes'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('input', {
   value: 1000, // animate the input "value" attribute
@@ -4226,6 +4326,8 @@ window.demos['animation-animatable-properties-svg-attributes'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate(['feTurbulence', 'feDisplacementMap'], {
   baseFrequency: .05,
@@ -4291,6 +4393,8 @@ window.demos['animation-tween-value-types'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -4347,6 +4451,8 @@ window.demos['animation-tween-value-types-numerical-value'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 waapi.animate('.square', {
   x: 240, //  -> 240px
@@ -4409,6 +4515,8 @@ window.demos['animation-tween-value-types-unit-conversion-value'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   width: '25%', // from '48px' to '25%',
@@ -4485,6 +4593,8 @@ window.demos['animation-tween-value-types-relative-value'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $clock ] = utils.$('.clock');
 const [ $add ] = utils.$('.add');
@@ -4569,6 +4679,8 @@ window.demos['animation-tween-value-types-color-value'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.hex',  {
   background: '#FF4B4B',
@@ -4660,6 +4772,8 @@ window.demos['animation-tween-value-types-color-function-value'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 waapi.animate('.circle',  {
   backgroundColor: 'color(display-p3 1.0 0.267 0.267 / 1.0)',
@@ -4729,6 +4843,8 @@ window.demos['animation-tween-value-types-css-variable'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 waapi.animate('.square',  {
   rotate: 'var(--rotation)',
@@ -4814,6 +4930,8 @@ window.demos['animation-tween-value-types-function-based'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: $el => /** @type {HTMLElement} */($el).getAttribute('data-x'),
@@ -4877,6 +4995,8 @@ window.demos['animation-tween-parameters'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -4933,6 +5053,8 @@ window.demos['animation-tween-parameters-to'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: {
@@ -5000,6 +5122,8 @@ window.demos['animation-tween-parameters-from'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   opacity: { from: .5 }, // Animate from .5 opacity to 1 opacity
@@ -5065,6 +5189,8 @@ window.demos['animation-tween-parameters-delay'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const animation = animate('.square', {
   x: '17rem',
@@ -5132,6 +5258,8 @@ window.demos['animation-tween-parameters-duration'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const animation = animate('.square', {
   x: '17rem',
@@ -5217,6 +5345,8 @@ window.demos['animation-tween-parameters-ease'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.row:nth-child(1) .square', {
   x: '17rem',
@@ -5336,6 +5466,8 @@ window.demos['animation-tween-parameters-composition'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const squares = utils.$('.square');
 const [ $none, $replace, $blend ] = squares;
@@ -5478,6 +5610,8 @@ window.demos['animation-tween-parameters-modifier'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.row:nth-child(1) .square', {
   x: '17rem',
@@ -5551,6 +5685,8 @@ window.demos['animation-keyframes'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -5607,6 +5743,8 @@ window.demos['animation-keyframes-tween-values-keyframes'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   translateX: ['0rem', 0, 17, 17, 0, 0],
@@ -5674,6 +5812,8 @@ window.demos['animation-keyframes-tween-parameters-keyframes'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: [
@@ -5751,6 +5891,8 @@ window.demos['animation-keyframes-duration-based-keyframes'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   keyframes: [
@@ -5822,6 +5964,8 @@ window.demos['animation-keyframes-percentage-based-keyframes'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   keyframes: {
@@ -5890,6 +6034,8 @@ window.demos['animation-animation-playback-settings'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -5946,6 +6092,8 @@ window.demos['animation-animation-playback-settings-delay'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const playbackDelay = animate('.delay', {
   x: '16rem',
@@ -6028,6 +6176,8 @@ window.demos['animation-animation-playback-settings-duration'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.dur-0', {
   x: '17rem',
@@ -6125,6 +6275,8 @@ window.demos['animation-animation-playback-settings-loop'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.loop', {
   x: '17.5rem',
@@ -6203,6 +6355,8 @@ window.demos['animation-animation-playback-settings-playback-loopdelay'] = funct
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const loopDelayAnimation = animate('.circle', {
   x: '16rem',
@@ -6289,6 +6443,8 @@ window.demos['animation-animation-playback-settings-alternate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.dir-normal', {
   x: '17rem',
@@ -6374,6 +6530,8 @@ window.demos['animation-animation-playback-settings-reversed'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.dir-normal', {
   x: '17rem',
@@ -6452,6 +6610,8 @@ window.demos['animation-animation-playback-settings-autoplay'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.autoplay-true', {
   x: '17rem',
@@ -6536,6 +6696,8 @@ window.demos['animation-animation-playback-settings-framerate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $range ] = utils.$('.range');
 const [ $fps ] = utils.$('.fps');
@@ -6630,6 +6792,8 @@ window.demos['animation-animation-playback-settings-playbackrate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $range ] = utils.$('.range');
 const [ $speed ] = utils.$('.speed');
@@ -6706,6 +6870,8 @@ window.demos['animation-animation-playback-settings-playbackease'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   keyframes: [
@@ -6795,6 +6961,8 @@ window.demos['animation-animation-playback-settings-persist'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('.button');
 
@@ -6868,6 +7036,8 @@ window.demos['animation-animation-callbacks'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -6932,6 +7102,8 @@ window.demos['animation-animation-callbacks-onbegin'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -7004,6 +7176,8 @@ window.demos['animation-animation-callbacks-oncomplete'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -7078,6 +7252,8 @@ window.demos['animation-animation-callbacks-onbeforeupdate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -7160,6 +7336,8 @@ window.demos['animation-animation-callbacks-onupdate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -7236,6 +7414,8 @@ window.demos['animation-animation-callbacks-onrender'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $rendersLog ] = utils.$('.value');
 
@@ -7312,6 +7492,8 @@ window.demos['animation-animation-callbacks-onloop'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -7402,6 +7584,8 @@ window.demos['animation-animation-callbacks-onpause'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $animateButton, $pauseButton, $removeButton ] = utils.$('.button');
 const [ $value ] = utils.$('.value');
@@ -7501,6 +7685,8 @@ window.demos['animation-animation-callbacks-then'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -7562,6 +7748,8 @@ window.demos['animation-animation-methods'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -7634,6 +7822,8 @@ window.demos['animation-animation-methods-play'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $playButton ] = utils.$('.play');
 
@@ -7721,6 +7911,8 @@ window.demos['animation-animation-methods-reverse'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $reverseButton ] = utils.$('.reverse');
 
@@ -7807,6 +7999,8 @@ window.demos['animation-animation-methods-pause'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $pauseButton ] = utils.$('.pause');
 
@@ -7895,6 +8089,8 @@ window.demos['animation-animation-methods-restart'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $restartButton ] = utils.$('.restart');
 
@@ -7983,6 +8179,8 @@ window.demos['animation-animation-methods-alternate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $alternateButton ] = utils.$('.button');
 
@@ -8074,6 +8272,8 @@ window.demos['animation-animation-methods-resume'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $pauseButton, $alternateButton, $resumeButton ] = utils.$('.button');
 
@@ -8167,6 +8367,8 @@ window.demos['animation-animation-methods-complete'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $completeButton ] = utils.$('.complete');
 
@@ -8257,6 +8459,8 @@ window.demos['animation-animation-methods-cancel'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $cancelButton ] = utils.$('.cancel');
 const [ $playButton ] = utils.$('.play');
@@ -8351,6 +8555,8 @@ window.demos['animation-animation-methods-revert'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $revertButton ] = utils.$('.revert');
 const [ $restartButton ] = utils.$('.restart');
@@ -8448,6 +8654,8 @@ window.demos['animation-animation-methods-reset'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $hardReset, $softReset ] = utils.$('.button');
 
@@ -8541,6 +8749,8 @@ window.demos['animation-animation-methods-seek'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $range ] = utils.$('.range');
 const [ $playPauseButton ] = utils.$('.play-pause');
@@ -8658,6 +8868,8 @@ window.demos['animation-animation-methods-stretch'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $range ] = utils.$('.range');
 const [ $totalDuration ] = utils.$('.value');
@@ -8753,6 +8965,8 @@ window.demos['animation-animation-methods-refresh'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $refreshButton ] = utils.$('.refresh');
 
@@ -8823,6 +9037,8 @@ window.demos['animation-animation-properties'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -8887,6 +9103,8 @@ window.demos['timeline'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const tl = createTimeline({ defaults: { duration: 750 } });
 
@@ -8984,6 +9202,8 @@ window.demos['timeline-add-timers'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $timer01, $timer02, $timer03 ] = utils.$('.timer');
 
@@ -9066,6 +9286,8 @@ window.demos['timeline-add-animations'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const circleAnimation = animate('.circle', {
   x: '15rem'
@@ -9147,6 +9369,8 @@ window.demos['timeline-sync-waapi-animations'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const circle = waapi.animate('.circle', {
   x: '15rem',
@@ -9233,6 +9457,8 @@ window.demos['timeline-sync-timelines'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const circleAnimation = animate('.circle', {
   x: '15rem'
@@ -9349,6 +9575,8 @@ window.demos['timeline-call-functions'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $functionA ] = utils.$('.function-A');
 const [ $functionB ] = utils.$('.function-B');
@@ -9422,6 +9650,8 @@ window.demos['timeline-time-position'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const tl = createTimeline()
 .label('start', 0)
@@ -9490,6 +9720,8 @@ window.demos['timeline-timeline-playback-settings'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -9554,6 +9786,8 @@ window.demos['timeline-timeline-playback-settings-defaults'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const tl = createTimeline({
   defaults: {
@@ -9639,6 +9873,8 @@ window.demos['timeline-timeline-playback-settings-delay'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const tl = createTimeline({
   delay: 2000,
@@ -9727,6 +9963,8 @@ window.demos['timeline-timeline-playback-settings-loop'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $loops ] = utils.$('.loops');
 
@@ -9811,6 +10049,8 @@ window.demos['timeline-timeline-playback-settings-playback-loopdelay'] = functio
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $loops ] = utils.$('.loops');
 
@@ -9894,6 +10134,8 @@ window.demos['timeline-timeline-playback-settings-alternate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $loops ] = utils.$('.loops');
 
@@ -9979,6 +10221,8 @@ window.demos['timeline-timeline-playback-settings-reversed'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $time ] = utils.$('.time');
 
@@ -10075,6 +10319,8 @@ window.demos['timeline-timeline-playback-settings-autoplay'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $paused ] = utils.$('.paused');
 const [ $play ] = utils.$('.play');
@@ -10173,6 +10419,8 @@ window.demos['timeline-timeline-playback-settings-framerate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $range ] = utils.$('.range');
 const [ $fps ] = utils.$('.fps');
@@ -10276,6 +10524,8 @@ window.demos['timeline-timeline-playback-settings-playbackrate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $range ] = utils.$('.range');
 const [ $speed ] = utils.$('.speed');
@@ -10361,6 +10611,8 @@ window.demos['timeline-timeline-playback-settings-playbackease'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const tl = createTimeline({
   playbackEase: 'inOut(3)', // this ease is applied across all children
@@ -10420,6 +10672,8 @@ window.demos['timeline-timeline-callbacks'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -10492,6 +10746,8 @@ window.demos['timeline-timeline-callbacks-onbegin'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -10574,6 +10830,8 @@ window.demos['timeline-timeline-callbacks-oncomplete'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -10657,6 +10915,8 @@ window.demos['timeline-timeline-callbacks-onbeforeupdate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -10743,6 +11003,8 @@ window.demos['timeline-timeline-callbacks-onupdate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -10829,6 +11091,8 @@ window.demos['timeline-timeline-callbacks-onrender'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -10915,6 +11179,8 @@ window.demos['timeline-timeline-callbacks-onloop'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -11015,6 +11281,8 @@ window.demos['timeline-timeline-callbacks-onpause'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $animateButton, $pauseButton, $removeButton ] = utils.$('.button');
 const [ $value ] = utils.$('.value');
@@ -11128,6 +11396,8 @@ window.demos['timeline-timeline-callbacks-then'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -11192,6 +11462,8 @@ window.demos['timeline-timeline-methods'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -11256,6 +11528,8 @@ window.demos['timeline-timeline-methods-add'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -11343,6 +11617,8 @@ window.demos['timeline-timeline-methods-set'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const tl = createTimeline()
 .set('.circle', { x: '15rem' })
@@ -11412,6 +11688,8 @@ window.demos['timeline-timeline-methods-sync'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const circleAnimation = waapi.animate('.circle', {
   x: '15rem'
@@ -11502,6 +11780,8 @@ window.demos['timeline-timeline-methods-label'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const tl = createTimeline()
 .label('circle', 0)
@@ -11598,6 +11878,8 @@ window.demos['timeline-timeline-methods-remove'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $removeA, $removeB, $removeC ] = utils.$('.button');
 
@@ -11709,6 +11991,8 @@ window.demos['timeline-timeline-methods-call'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $functionA ] = utils.$('.function-A');
 const [ $functionB ] = utils.$('.function-B');
@@ -11782,6 +12066,8 @@ window.demos['timeline-timeline-methods-init'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const tl = createTimeline()
 .add('.square',   { x: { from: '15rem' } })
@@ -11862,6 +12148,8 @@ window.demos['timeline-timeline-methods-play'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $playButton ] = utils.$('.play');
 
@@ -11951,6 +12239,8 @@ window.demos['timeline-timeline-methods-reset'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $reset ] = utils.$('.button');
 
@@ -12044,6 +12334,8 @@ window.demos['timeline-timeline-methods-reverse'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $reverseButton ] = utils.$('.reverse');
 
@@ -12131,6 +12423,8 @@ window.demos['timeline-timeline-methods-pause'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $pauseButton ] = utils.$('.pause');
 
@@ -12221,6 +12515,8 @@ window.demos['timeline-timeline-methods-restart'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $restartButton ] = utils.$('.restart');
 
@@ -12311,6 +12607,8 @@ window.demos['timeline-timeline-methods-alternate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $alternateButton ] = utils.$('.button');
 
@@ -12404,6 +12702,8 @@ window.demos['timeline-timeline-methods-resume'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $pauseButton, $alternateButton, $resumeButton ] = utils.$('.button');
 
@@ -12497,6 +12797,8 @@ window.demos['timeline-timeline-methods-complete'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $completeButton ] = utils.$('.complete');
 
@@ -12588,6 +12890,8 @@ window.demos['timeline-timeline-methods-cancel'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $cancelButton ] = utils.$('.cancel');
 const [ $playButton ] = utils.$('.play');
@@ -12684,6 +12988,8 @@ window.demos['timeline-timeline-methods-revert'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $revertButton ] = utils.$('.revert');
 const [ $restartButton ] = utils.$('.restart');
@@ -12783,6 +13089,8 @@ window.demos['timeline-timeline-methods-seek'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $range ] = utils.$('.range');
 const [ $playPauseButton ] = utils.$('.play-pause');
@@ -12901,6 +13209,8 @@ window.demos['timeline-timeline-methods-stretch'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $range ] = utils.$('.range');
 const [ $totalDuration ] = utils.$('.value');
@@ -12998,6 +13308,8 @@ window.demos['timeline-timeline-methods-refresh'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $refreshButton ] = utils.$('.refresh');
 
@@ -13066,6 +13378,8 @@ window.demos['timeline-timeline-properties'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -13132,6 +13446,8 @@ window.demos['animatable'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const $demos = document.querySelector('#docs-demos');
 const $demo = document.querySelector('.docs-demo.is-active');
@@ -13212,6 +13528,8 @@ window.demos['animatable-animatable-settings'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -13278,6 +13596,8 @@ window.demos['animatable-animatable-settings-unit'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const $demos = document.querySelector('#docs-demos');
 const [ $clock ] = utils.$('.clock');
@@ -13379,6 +13699,8 @@ window.demos['animatable-animatable-settings-duration'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const $demos = document.querySelector('#docs-demos');
 const $demo = document.querySelector('.docs-demo.is-active');
@@ -13475,6 +13797,8 @@ window.demos['animatable-animatable-settings-ease'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const clock1 = createAnimatable('.clock-1', {
   rotate: { unit: 'rad' },
@@ -13584,6 +13908,8 @@ window.demos['animatable-animatable-settings-modifier'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const PI = Math.PI;
 
@@ -13672,6 +13998,8 @@ window.demos['animatable-animatable-methods'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -13774,6 +14102,8 @@ window.demos['animatable-animatable-methods-getters'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const $demos = document.querySelector('#docs-demos');
 const $demo = document.querySelector('.docs-demo.is-active');
@@ -13871,6 +14201,8 @@ window.demos['animatable-animatable-methods-setters'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const $demos = document.querySelector('#docs-demos');
 const $demo = document.querySelector('.docs-demo.is-active');
@@ -13981,6 +14313,8 @@ window.demos['animatable-animatable-methods-revert'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const $demos = document.querySelector('#docs-demos');
 const $demo = $demos.querySelector('.docs-demo.is-active');
@@ -14067,6 +14401,8 @@ window.demos['animatable-animatable-properties'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -14123,6 +14459,8 @@ window.demos['draggable'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square');
 }
@@ -14177,6 +14515,8 @@ window.demos['draggable-draggable-axes-parameters'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -14243,6 +14583,8 @@ window.demos['draggable-draggable-axes-parameters-x'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square.enabled', {
   x: true
@@ -14317,6 +14659,8 @@ window.demos['draggable-draggable-axes-parameters-y'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square.enabled', {
   y: true
@@ -14410,6 +14754,8 @@ window.demos['draggable-draggable-axes-parameters-snap'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.grid',
@@ -14472,6 +14818,8 @@ window.demos['draggable-draggable-axes-parameters-modifier'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   modifier: utils.wrap(-32, 32), // Global to both x and y
@@ -14533,6 +14881,8 @@ window.demos['draggable-draggable-axes-parameters-mapto'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 utils.set('.square', { z: 100 });
 
@@ -14592,6 +14942,8 @@ window.demos['draggable-draggable-settings'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -14652,6 +15004,8 @@ window.demos['draggable-draggable-settings-trigger'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.row', {
   trigger: '.circle',
@@ -14722,6 +15076,8 @@ window.demos['draggable-draggable-settings-container'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.grid',
@@ -14794,6 +15150,8 @@ window.demos['draggable-draggable-settings-containerpadding'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.grid',
@@ -14858,6 +15216,8 @@ window.demos['draggable-draggable-settings-containerfriction'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.grid',
@@ -14926,6 +15286,8 @@ window.demos['draggable-draggable-settings-releasecontainerfriction'] = function
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.grid',
@@ -14994,6 +15356,8 @@ window.demos['draggable-draggable-settings-releasemass'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.grid',
@@ -15062,6 +15426,8 @@ window.demos['draggable-draggable-settings-releasestiffness'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.grid',
@@ -15130,6 +15496,8 @@ window.demos['draggable-draggable-settings-releasedamping'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.grid',
@@ -15198,6 +15566,8 @@ window.demos['draggable-draggable-settings-velocitymultiplier'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.grid',
@@ -15266,6 +15636,8 @@ window.demos['draggable-draggable-settings-minvelocity'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.grid',
@@ -15334,6 +15706,8 @@ window.demos['draggable-draggable-settings-maxvelocity'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.grid',
@@ -15402,6 +15776,8 @@ window.demos['draggable-draggable-settings-releaseease'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.grid',
@@ -15473,6 +15849,8 @@ window.demos['draggable-draggable-settings-dragspeed'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.grid',
@@ -15541,6 +15919,8 @@ window.demos['draggable-draggable-settings-dragthreshold'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.grid',
@@ -15589,7 +15969,7 @@ createDraggable('.circle', {
   border-radius: 2px;
 }    </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-x scroll-y">
+    <div class="full-container scroll-container scroll-x scroll-y">
   <div class="scroll-content">
     <div class="large padded grid square-grid">
       <div class="square draggable"></div>
@@ -15597,7 +15977,7 @@ createDraggable('.circle', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-x scroll-y">
+    <div class="full-container scroll-container scroll-x scroll-y">
   <div class="scroll-content">
     <div class="large padded grid square-grid">
       <div class="square draggable"></div>
@@ -15630,6 +16010,8 @@ window.demos['draggable-draggable-settings-scrollthreshold'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.scroll-container',
@@ -15658,7 +16040,7 @@ createDraggable('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-x scroll-y">
+    <div class="full-container scroll-container scroll-x scroll-y">
   <div class="scroll-content">
     <div class="large padded grid square-grid">
       <div class="square draggable"></div>
@@ -15666,7 +16048,7 @@ createDraggable('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-x scroll-y">
+    <div class="full-container scroll-container scroll-x scroll-y">
   <div class="scroll-content">
     <div class="large padded grid square-grid">
       <div class="square draggable"></div>
@@ -15699,6 +16081,8 @@ window.demos['draggable-draggable-settings-scrollspeed'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   container: '.scroll-container',
@@ -15762,6 +16146,8 @@ window.demos['draggable-draggable-settings-cursor'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createDraggable('.square', {
   cursor: false
@@ -15825,6 +16211,8 @@ window.demos['draggable-draggable-callbacks'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -15889,6 +16277,8 @@ window.demos['draggable-draggable-callbacks-ongrab'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -15962,6 +16352,8 @@ window.demos['draggable-draggable-callbacks-ondrag'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -16035,6 +16427,8 @@ window.demos['draggable-draggable-callbacks-onupdate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -16108,6 +16502,8 @@ window.demos['draggable-draggable-callbacks-onrelease'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -16181,6 +16577,8 @@ window.demos['draggable-draggable-callbacks-onsnap'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -16256,6 +16654,8 @@ window.demos['draggable-draggable-callbacks-onsettle'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -16468,6 +16868,8 @@ window.demos['draggable-draggable-methods'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -16534,6 +16936,8 @@ window.demos['draggable-draggable-methods-disable'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $disableButton ] = utils.$('.disable');
 
@@ -16610,6 +17014,8 @@ window.demos['draggable-draggable-methods-enable'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $enableButton ] = utils.$('.enable');
 
@@ -16688,6 +17094,8 @@ window.demos['draggable-draggable-methods-setx'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $setButton ] = utils.$('.set');
 
@@ -16764,6 +17172,8 @@ window.demos['draggable-draggable-methods-sety'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $setButton ] = utils.$('.set');
 
@@ -16848,6 +17258,8 @@ window.demos['draggable-draggable-methods-animateinview'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $animateInView ] = utils.$('.animate-button');
 
@@ -16889,7 +17301,7 @@ $animateInView.removeEventListener('click', animateInView);}
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-x scroll-y">
+    <div class="full-container scroll-container scroll-x scroll-y">
   <div class="scroll-content">
     <div class="large padded grid square-grid">
       <div class="square draggable"></div>
@@ -16900,7 +17312,7 @@ $animateInView.removeEventListener('click', animateInView);}
   <button class="button">Scroll in view</button>
 </fieldset>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-x scroll-y">
+    <div class="full-container scroll-container scroll-x scroll-y">
   <div class="scroll-content">
     <div class="large padded grid square-grid">
       <div class="square draggable"></div>
@@ -16936,6 +17348,8 @@ window.demos['draggable-draggable-methods-scrollinview'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $scrollInView ] = utils.$('.button');
 
@@ -17020,6 +17434,8 @@ window.demos['draggable-draggable-methods-stop'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $stopButton ] = utils.$('.stop');
 
@@ -17102,6 +17518,8 @@ window.demos['draggable-draggable-methods-reset'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $resetButton ] = utils.$('.reset');
 
@@ -17178,6 +17596,8 @@ window.demos['draggable-draggable-methods-revert'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $revertButton ] = utils.$('.revert');
 
@@ -17257,6 +17677,8 @@ window.demos['draggable-draggable-methods-refresh'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $refreshButton ] = utils.$('.refresh');
 
@@ -17322,6 +17744,8 @@ window.demos['draggable-draggable-properties'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -17413,6 +17837,8 @@ window.demos['layout'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const layout = createLayout('.layout-container');
 
@@ -17483,6 +17909,8 @@ window.demos['layout-usage'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -17565,6 +17993,8 @@ window.demos['layout-usage-specifying-a-root'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $rootA, $rootB ] = utils.$('.layout-container');
 const [ $buttonA, $buttonB ] = utils.$('.controls button');
@@ -17694,6 +18124,8 @@ window.demos['layout-usage-css-display-property-animation'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('.controls button');
 const items = utils.$('.item');
@@ -17815,6 +18247,8 @@ window.demos['layout-usage-staggered-layout-animation'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('.controls button');
 const [ $root ] = utils.$('.layout-container');
@@ -17916,6 +18350,8 @@ window.demos['layout-usage-dom-order-change-animation'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('.controls button');
 
@@ -18001,6 +18437,8 @@ window.demos['layout-usage-enter-layout-animation'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('.controls button');
 
@@ -18120,6 +18558,8 @@ window.demos['layout-usage-exit-layout-animation'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('.controls button');
 
@@ -18224,6 +18664,8 @@ window.demos['layout-usage-swap-parent-animation'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('.controls button');
 
@@ -18415,6 +18857,8 @@ window.demos['layout-usage-animate-modal-dialog'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const buttons = utils.$('button');
 
@@ -18515,6 +18959,8 @@ window.demos['layout-layout-settings'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -18589,6 +19035,8 @@ window.demos['layout-layout-settings-children'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $buttonA, $buttonB ] = utils.$('.controls button');
 
@@ -18685,6 +19133,8 @@ window.demos['layout-layout-settings-delay'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $buttonA, $buttonB ] = utils.$('.controls button');
 
@@ -18787,6 +19237,8 @@ window.demos['layout-layout-settings-duration'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $rootA, $rootB ] = utils.$('.layout-container');
 const [ $buttonA, $buttonB ] = utils.$('.controls button');
@@ -18881,6 +19333,8 @@ window.demos['layout-layout-settings-ease'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $buttonA, $buttonB ] = utils.$('.controls button');
 
@@ -18981,6 +19435,8 @@ window.demos['layout-layout-settings-properties'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('.controls button');
 
@@ -19048,6 +19504,8 @@ window.demos['layout-states-parameters'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -19118,6 +19576,8 @@ window.demos['layout-states-parameters-enterFrom'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('.controls button');
 
@@ -19237,6 +19697,8 @@ window.demos['layout-states-parameters-leaveTo'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('.controls button');
 
@@ -19339,6 +19801,8 @@ window.demos['layout-states-parameters-swapAt'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $buttonA, $buttonB ] = utils.$('.controls button');
 
@@ -19411,6 +19875,8 @@ window.demos['layout-layout-methods'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -19485,6 +19951,8 @@ window.demos['layout-layout-methods-record'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('.controls button');
 
@@ -19577,6 +20045,8 @@ window.demos['layout-layout-methods-animate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('.controls button');
 
@@ -19672,6 +20142,8 @@ window.demos['layout-layout-methods-update'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('.controls button');
 
@@ -19767,6 +20239,8 @@ window.demos['layout-layout-methods-revert'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $animate, $revert ] = utils.$('.controls button');
 
@@ -19867,6 +20341,8 @@ window.demos['layout-layout-id-attribute'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('.controls button');
 const [ $itemA1, $itemA2 ] = utils.$('.item');
@@ -19943,6 +20419,8 @@ window.demos['layout-layout-callbacks'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -19995,6 +20473,8 @@ window.demos['layout-layout-properties'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -20047,6 +20527,8 @@ window.demos['layout-common-auto-layout-gotchas'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -20364,6 +20846,8 @@ window.demos['scope-scope-parameters'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -20438,6 +20922,8 @@ window.demos['scope-scope-parameters-root'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 createScope({ root: '.row:nth-child(2)' })
 .add(() => {
@@ -20521,6 +21007,8 @@ window.demos['scope-scope-parameters-defaults'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const rows = utils.$('.row');
 
@@ -20674,6 +21162,8 @@ window.demos['scope-scope-methods'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -21079,6 +21569,8 @@ window.demos['scope-scope-methods-revert'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button1, $button2 ] = utils.$('.revert');
 
@@ -21228,6 +21720,8 @@ window.demos['scope-scope-methods-refresh'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button1, $button2 ] = utils.$('.refresh');
 
@@ -21312,6 +21806,8 @@ window.demos['scope-scope-properties'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -21364,6 +21860,8 @@ window.demos['events'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -21394,7 +21892,7 @@ window.demos['events'] = function(
   margin: 0;
 }    </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -21424,7 +21922,7 @@ window.demos['events'] = function(
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -21479,6 +21977,8 @@ window.demos['events-onscroll'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ container ] = utils.$('.scroll-container');
 const debug = true;
@@ -21580,6 +22080,8 @@ window.demos['events-onscroll-scrollobserver-settings'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -21603,7 +22105,7 @@ window.demos['events-onscroll-scrollobserver-settings'] = function(
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -21618,7 +22120,7 @@ window.demos['events-onscroll-scrollobserver-settings'] = function(
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -21658,6 +22160,8 @@ window.demos['events-onscroll-scrollobserver-settings-container'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '15rem',
@@ -21696,7 +22200,7 @@ animate('.square', {
   width: 12rem;
 }    </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -21714,7 +22218,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -21757,6 +22261,8 @@ window.demos['events-onscroll-scrollobserver-settings-target'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $timer ] = utils.$('.timer');
 
@@ -21795,7 +22301,7 @@ createTimer({
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -21815,7 +22321,7 @@ createTimer({
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -21860,6 +22366,8 @@ window.demos['events-onscroll-scrollobserver-settings-debug'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '15rem',
@@ -21899,7 +22407,7 @@ animate('.square', {
   width: 12rem;
 }    </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-x">
+    <div class="full-container scroll-container scroll-x">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -21914,7 +22422,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-x">
+    <div class="full-container scroll-container scroll-x">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -21954,6 +22462,8 @@ window.demos['events-onscroll-scrollobserver-settings-axis'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '15rem',
@@ -21990,7 +22500,7 @@ animate('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -22021,7 +22531,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -22077,6 +22587,8 @@ window.demos['events-onscroll-scrollobserver-settings-repeat'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $repeat ] = utils.$('.repeat .value');
 const [ $noRepeat ] = utils.$('.no-repeat .value');
@@ -22161,6 +22673,8 @@ window.demos['events-onscroll-scrollobserver-thresholds'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -22184,7 +22698,7 @@ window.demos['events-onscroll-scrollobserver-thresholds'] = function(
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -22201,7 +22715,7 @@ window.demos['events-onscroll-scrollobserver-thresholds'] = function(
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -22243,6 +22757,8 @@ window.demos['events-onscroll-scrollobserver-thresholds-numeric-values'] = funct
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '15rem',
@@ -22283,7 +22799,7 @@ animate('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -22300,7 +22816,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -22342,6 +22858,8 @@ window.demos['events-onscroll-scrollobserver-thresholds-positions-shorthands'] =
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '15rem',
@@ -22380,7 +22898,7 @@ animate('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -22397,7 +22915,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large centered row">
@@ -22439,6 +22957,8 @@ window.demos['events-onscroll-scrollobserver-thresholds-relative-position-values
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '15rem',
@@ -22477,7 +22997,7 @@ animate('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -22497,7 +23017,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -22542,6 +23062,8 @@ window.demos['events-onscroll-scrollobserver-thresholds-min-max'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 utils.$('.square').forEach($square => {
   animate($square, {
@@ -22611,6 +23133,8 @@ window.demos['events-onscroll-scrollobserver-synchronisation-modes'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -22634,7 +23158,7 @@ window.demos['events-onscroll-scrollobserver-synchronisation-modes'] = function(
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -22651,7 +23175,7 @@ window.demos['events-onscroll-scrollobserver-synchronisation-modes'] = function(
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -22693,6 +23217,8 @@ window.demos['events-onscroll-scrollobserver-synchronisation-modes-method-names'
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '15rem',
@@ -22729,7 +23255,7 @@ animate('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -22746,7 +23272,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -22788,6 +23314,8 @@ window.demos['events-onscroll-scrollobserver-synchronisation-modes-playback-prog
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '15rem',
@@ -22824,7 +23352,7 @@ animate('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -22841,7 +23369,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -22883,6 +23411,8 @@ window.demos['events-onscroll-scrollobserver-synchronisation-modes-smooth-scroll
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '15rem',
@@ -22919,7 +23449,7 @@ animate('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -22937,7 +23467,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -22980,6 +23510,8 @@ window.demos['events-onscroll-scrollobserver-synchronisation-modes-eased-scroll'
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '12rem',
@@ -23046,6 +23578,8 @@ window.demos['events-onscroll-scrollobserver-callbacks'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -23069,7 +23603,7 @@ window.demos['events-onscroll-scrollobserver-callbacks'] = function(
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23089,7 +23623,7 @@ window.demos['events-onscroll-scrollobserver-callbacks'] = function(
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23134,6 +23668,8 @@ window.demos['events-onscroll-scrollobserver-callbacks-onenter'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -23175,7 +23711,7 @@ animate('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23195,7 +23731,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23240,6 +23776,8 @@ window.demos['events-onscroll-scrollobserver-callbacks-onenterforward'] = functi
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -23281,7 +23819,7 @@ animate('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23301,7 +23839,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23346,6 +23884,8 @@ window.demos['events-onscroll-scrollobserver-callbacks-onenterbackward'] = funct
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -23387,7 +23927,7 @@ animate('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23407,7 +23947,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23452,6 +23992,8 @@ window.demos['events-onscroll-scrollobserver-callbacks-onleave'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -23493,7 +24035,7 @@ animate('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23513,7 +24055,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23558,6 +24100,8 @@ window.demos['events-onscroll-scrollobserver-callbacks-onleaveforward'] = functi
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -23599,7 +24143,7 @@ animate('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23619,7 +24163,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23664,6 +24208,8 @@ window.demos['events-onscroll-scrollobserver-callbacks-onleavebackward'] = funct
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -23705,7 +24251,7 @@ animate('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23725,7 +24271,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23770,6 +24316,8 @@ window.demos['events-onscroll-scrollobserver-callbacks-onupdate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -23811,7 +24359,7 @@ animate('.square', {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23830,7 +24378,7 @@ animate('.square', {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded sticky">
       <div class="large row">
@@ -23874,6 +24422,8 @@ window.demos['events-onscroll-scrollobserver-callbacks-onsynccomplete'] = functi
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -23916,7 +24466,7 @@ animate('.square', {
         </style>
     <div class="docs-demo-html docs-demo-live demo">
     <div class="iframe-content resizable">
-  <div class="scroll-container scroll-y">
+  <div class="full-container scroll-container scroll-y">
     <div class="scroll-content grid square-grid">
       <div class="scroll-section sticky">
         <div class="large row">
@@ -23937,7 +24487,7 @@ animate('.square', {
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
     <div class="iframe-content resizable">
-  <div class="scroll-container scroll-y">
+  <div class="full-container scroll-container scroll-y">
     <div class="scroll-content grid square-grid">
       <div class="scroll-section sticky">
         <div class="large row">
@@ -24047,6 +24597,8 @@ window.demos['events-onscroll-scrollobserver-methods'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -24070,7 +24622,7 @@ window.demos['events-onscroll-scrollobserver-methods'] = function(
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -24087,7 +24639,7 @@ window.demos['events-onscroll-scrollobserver-methods'] = function(
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -24129,6 +24681,8 @@ window.demos['events-onscroll-scrollobserver-methods-link'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const animation = animate('.square', {
   x: '15rem',
@@ -24168,7 +24722,7 @@ scrollObserver.link(animation);
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -24185,7 +24739,7 @@ scrollObserver.link(animation);
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -24227,6 +24781,8 @@ window.demos['events-onscroll-scrollobserver-methods-refresh'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const scrollSettings = {
   enter: 20,
@@ -24277,7 +24833,7 @@ animate(scrollSettings, {
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -24294,7 +24850,7 @@ animate(scrollSettings, {
   </div>
 </div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="scroll-container scroll-y">
+    <div class="full-container scroll-container scroll-y">
   <div class="scroll-content grid square-grid">
     <div class="scroll-section padded">
       <div class="large row">
@@ -24336,6 +24892,8 @@ window.demos['events-onscroll-scrollobserver-methods-revert'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '15rem',
@@ -24402,6 +24960,8 @@ window.demos['events-onscroll-scrollobserver-properties'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -24454,6 +25014,8 @@ window.demos['svg'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -24516,6 +25078,8 @@ window.demos['svg-morphto'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $path1, $path2 ] = utils.$('polygon');
 
@@ -24631,6 +25195,8 @@ window.demos['svg-createdrawable'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate(svg.createDrawable('.line'), {
   draw: ['0 0', '0 1', '1 1'],
@@ -24718,6 +25284,8 @@ window.demos['svg-createmotionpath'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 // Animate the transforms properties of .car the motion path values
 const carAnimation = animate('.car', {
@@ -24787,6 +25355,8 @@ window.demos['text'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -24854,6 +25424,8 @@ window.demos['text-splittext'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const { words, chars } = splitText('p', {
   words: { wrap: 'clip' },
@@ -24923,6 +25495,8 @@ window.demos['text-splittext-textsplitter-settings'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -24981,6 +25555,8 @@ window.demos['text-splittext-textsplitter-settings-lines'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 splitText('p', {
   lines: { wrap: 'clip' },
@@ -25054,6 +25630,8 @@ window.demos['text-splittext-textsplitter-settings-words'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const { words } = splitText('p', {
   words: { wrap: 'clip' },
@@ -25127,6 +25705,8 @@ window.demos['text-splittext-textsplitter-settings-chars'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const { chars } = splitText('p', {
   chars: { wrap: 'clip' },
@@ -25208,6 +25788,8 @@ window.demos['text-splittext-textsplitter-settings-debug'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('button');
 const [ $p ] = utils.$('p');
@@ -25297,6 +25879,8 @@ window.demos['text-splittext-textsplitter-settings-includespaces'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('button');
 const [ $p ] = utils.$('p');
@@ -25394,6 +25978,8 @@ window.demos['text-splittext-textsplitter-settings-accessible'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('button');
 const split = splitText('p', { debug: true });
@@ -25489,6 +26075,8 @@ window.demos['text-splittext-split-parameters'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -25552,6 +26140,8 @@ window.demos['text-splittext-split-parameters-class'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 splitText('p', {
   chars: { class: 'split-char' },
@@ -25620,6 +26210,8 @@ window.demos['text-splittext-split-parameters-wrap'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const { chars } = splitText('p', {
   chars: { wrap: true },
@@ -25691,6 +26283,8 @@ window.demos['text-splittext-split-parameters-clone'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const { chars } = splitText('p', {
   chars: {
@@ -25784,6 +26378,8 @@ window.demos['text-splittext-html-template'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 splitText('p', {
   chars: `<span class="char-3d word-{i}">
@@ -25852,6 +26448,8 @@ window.demos['text-splittext-textsplitter-methods'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -26005,6 +26603,8 @@ window.demos['text-splittext-textsplitter-methods-revert'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('button');
 const [ $p ] = utils.$('p');
@@ -26099,6 +26699,8 @@ window.demos['text-splittext-textsplitter-methods-refresh'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $add, $remove ] = utils.$('button');
 const [ $p ] = utils.$('p');
@@ -26186,6 +26788,8 @@ window.demos['text-splittext-textsplitter-properties'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -26242,6 +26846,8 @@ window.demos['text-scrambletext'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('p', {
   innerHTML: scrambleText(),
@@ -26300,6 +26906,8 @@ window.demos['text-scrambletext-scrambletext-parameters'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -26366,6 +26974,8 @@ window.demos['text-scrambletext-scrambletext-parameters-text'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const [ $button ] = utils.$('button');
@@ -26455,6 +27065,8 @@ window.demos['text-scrambletext-scrambletext-parameters-chars'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const buttons = utils.$('button');
@@ -26538,6 +27150,8 @@ window.demos['text-scrambletext-scrambletext-parameters-override'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const buttons = utils.$('button');
@@ -26621,6 +27235,8 @@ window.demos['text-scrambletext-scrambletext-parameters-ease'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const buttons = utils.$('button');
@@ -26703,6 +27319,8 @@ window.demos['text-scrambletext-scrambletext-parameters-cursor'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const buttons = utils.$('button');
@@ -26786,6 +27404,8 @@ window.demos['text-scrambletext-scrambletext-parameters-revealrate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const buttons = utils.$('button');
@@ -26869,6 +27489,8 @@ window.demos['text-scrambletext-scrambletext-parameters-revealdelay'] = function
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const buttons = utils.$('button');
@@ -26952,6 +27574,8 @@ window.demos['text-scrambletext-scrambletext-parameters-settlerate'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const buttons = utils.$('button');
@@ -27035,6 +27659,8 @@ window.demos['text-scrambletext-scrambletext-parameters-settleduration'] = funct
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const buttons = utils.$('button');
@@ -27118,6 +27744,8 @@ window.demos['text-scrambletext-scrambletext-parameters-delay'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const buttons = utils.$('button');
@@ -27201,6 +27829,8 @@ window.demos['text-scrambletext-scrambletext-parameters-duration'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const buttons = utils.$('button');
@@ -27284,6 +27914,8 @@ window.demos['text-scrambletext-scrambletext-parameters-perturbation'] = functio
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const buttons = utils.$('button');
@@ -27367,6 +27999,8 @@ window.demos['text-scrambletext-scrambletext-parameters-from'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const buttons = utils.$('button');
@@ -27448,6 +28082,8 @@ window.demos['text-scrambletext-scrambletext-parameters-reversed'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const [ $button ] = utils.$('button');
@@ -27537,6 +28173,8 @@ window.demos['text-scrambletext-scrambletext-parameters-seed'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const buttons = utils.$('button');
@@ -27602,6 +28240,8 @@ window.demos['text-scrambletext-scrambletext-callbacks'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -27668,6 +28308,8 @@ window.demos['text-scrambletext-scrambletext-callbacks-onchange'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $p ] = utils.$('p');
 const [ $btn ] = utils.$('button');
@@ -27753,6 +28395,8 @@ window.demos['utilities'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -27827,6 +28471,8 @@ window.demos['utilities-stagger'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '17rem',
@@ -27915,6 +28561,8 @@ window.demos['utilities-stagger-time-staggering'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '17rem',
@@ -27999,6 +28647,8 @@ window.demos['utilities-stagger-values-staggering'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const animation = animate('.square', {
   y: stagger(['-2.75rem', '2.75rem']),
@@ -28070,6 +28720,8 @@ window.demos['utilities-stagger-timeline-positions-staggering'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const tl = createTimeline();
 
@@ -28138,6 +28790,8 @@ window.demos['utilities-stagger-stagger-value-types'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -28220,6 +28874,8 @@ window.demos['utilities-stagger-stagger-value-types-numerical-value'] = function
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   // Increase translateX by 5.75rem for each elements
@@ -28303,6 +28959,8 @@ window.demos['utilities-stagger-stagger-value-types-range-value'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   y: stagger(['2.75rem', '-2.75rem']),
@@ -28360,6 +29018,8 @@ window.demos['utilities-stagger-stagger-parameters'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -28442,6 +29102,8 @@ window.demos['utilities-stagger-stagger-parameters-stagger-start'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: stagger('1rem', { start: 14 }), // adds 14 to the staggered value
@@ -28601,6 +29263,8 @@ window.demos['utilities-stagger-stagger-parameters-stagger-from'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const tl = createTimeline({
   loop: true,
@@ -28715,6 +29379,8 @@ window.demos['utilities-stagger-stagger-parameters-stagger-reversed'] = function
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   translateX: '17rem',
@@ -28796,10 +29462,16 @@ window.demos['utilities-stagger-stagger-parameters-stagger-ease'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   y: stagger(['2.75rem', '-2.75rem'], { ease: 'inOut(3)' }),
-  delay: stagger(100, { ease: 'inOut(3)' }),
+  delay: stagger([0, 500], { ease: 'inOut(3)', from: 'center' }),
+  ease: 'inOutQuad',
+  duration: 500,
+  loop: true,
+  alternate: true,
 });
 }
 </script>
@@ -28955,6 +29627,8 @@ window.demos['utilities-stagger-stagger-parameters-stagger-grid'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const $squares = utils.$('.square');
 
@@ -29133,6 +29807,8 @@ window.demos['utilities-stagger-stagger-parameters-stagger-grid-axis'] = functio
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const grid = [11, 4];
 const $squares = utils.$('.square');
@@ -29236,6 +29912,8 @@ window.demos['utilities-stagger-stagger-parameters-stagger-modifier'] = function
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   boxShadow: [
@@ -29331,6 +30009,8 @@ window.demos['utilities-stagger-stagger-parameters-stagger-use'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '17rem',
@@ -29419,6 +30099,8 @@ window.demos['utilities-stagger-stagger-parameters-stagger-total'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.square', {
   x: '17rem',
@@ -29431,6 +30113,93 @@ animate('.square', {
   <div class="docs-nav-menu ui-group">
               <button class="ui-input code-edit-button" title="Edit example on CodePen"><svg class="icon" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke-width="1.75"><polygon stroke="currentColor" points="13.5 8.5 7.5 14.5 7.5 17.5 10.5 17.5 16.5 11.5"/><path stroke="currentColor" d="M18.0857864,7.08578644 L17.9142136,6.91421356 C17.133165,6.13316498 15.866835,6.13316498 15.0857864,6.91421356 L13.5,8.5 L13.5,8.5 L16.5,11.5 L18.0857864,9.91421356 C18.866835,9.13316498 18.866835,7.86683502 18.0857864,7.08578644 Z"/></g></svg></button>
           <button class="ui-input demo-reload-button" data-id="utilities-stagger-stagger-parameters-stagger-total" title="Refresh demo"><svg class="icon" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18.0104076,5.98959236 L18.0097074,10.8757002 L13.1243067,10.8749931 L14.9168155,9.08318453 C14.7588711,8.92524016 14.591305,8.78278169 14.416004,8.65580911 L14.2448263,8.53829933 L14.1371098,8.47076625 L13.9480605,8.36293733 L13.7659116,8.27106673 L13.6639309,8.22427402 L13.527,8.16859236 L13.3619515,8.10538106 L13.0709847,8.01574221 L12.8718507,7.96768109 L12.7151297,7.93698408 L12.5212881,7.90777003 L12.4261665,7.89693978 L12.2097893,7.88030511 L11.9960663,7.87500186 L11.7823517,7.88071033 L11.5786024,7.89645013 L11.2618565,7.94085619 L11.0866744,7.97645921 L10.7825793,8.05787657 L10.5824409,8.12517064 L10.3734129,8.20804866 L10.1970153,8.28864689 L10.1108524,8.33204891 C9.99719576,8.3907053 9.8866159,8.45448924 9.77941876,8.52309484 L9.59973855,8.64452049 L9.35092327,8.83790906 C9.18556048,8.97659012 9.03123567,9.12800249 8.88945733,9.29063767 L8.74812474,9.4614153 L8.68958969,9.53851461 L8.60105067,9.66146194 L8.47414064,9.85783057 L8.39504795,9.9934838 L8.32936425,10.1155307 L8.23929415,10.3023761 C8.15831703,10.4818452 8.09083992,10.6659201 8.0368628,10.8530651 C7.93143024,11.2167272 7.875,11.6017736 7.875,12 C7.875,14.2781746 9.72182541,16.125 12,16.125 C13.9333525,16.125 15.5560509,14.7949318 16.0029785,12.9999121 L17.7901334,13.0005982 C17.3151731,15.7686406 14.9035699,17.875 12,17.875 C8.75532709,17.875 6.125,15.2446729 6.125,12 C6.125,11.2278045 6.27397809,10.4904048 6.54476016,9.8149748 L6.66977806,9.52595215 L6.8191583,9.22642108 L6.94536978,9.00296435 L7.0375393,8.85370907 L7.11693936,8.73128812 L7.27481186,8.50749878 L7.48447137,8.24100422 L7.65875746,8.04139229 L7.84574766,7.84574766 L7.97056232,7.72450669 L8.22033943,7.50182263 L8.48683851,7.29064127 L8.53289754,7.2566322 C8.6990325,7.1345321 8.87017642,7.02246737 9.04549311,6.92030533 L9.38637864,6.73693467 L9.60279001,6.63472714 L9.70370878,6.59066027 L9.9093334,6.50787023 L10.1516638,6.42194344 L10.3754461,6.3529011 L10.559856,6.30280265 L10.8574265,6.2365504 L11.0895665,6.19555985 L11.3001989,6.16657685 L11.5356036,6.14327045 L11.7631086,6.12971107 L12,6.125 C12.1257143,6.125 12.2507365,6.12898444 12.3749241,6.13685601 L12.7168017,6.16862972 L13.0038549,6.21082943 L13.2075613,6.2497529 L13.4423976,6.30388598 L13.6921015,6.37276113 L14.0328644,6.48681143 L14.3072123,6.59536992 L14.591522,6.72568265 L14.6764297,6.7689309 L14.8635074,6.86845043 L15.0861432,6.99982731 L15.3048531,7.14170066 L15.5309991,7.30359276 L15.7300123,7.46012938 L15.9070204,7.61160776 L16.1542523,7.84574766 L18.0104076,5.98959236 Z"/></svg></button>
+        <button class="ui-input minimise-demo-button" title="Minimize demo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g id="minimize" fill="none" fill-rule="evenodd">
+    <path id="Shape" fill="#FFFFFF" fill-rule="nonzero" d="M16.167 6.125a3.375 3.375 0 0 1 3.37 3.19l.005.185v5a3.375 3.375 0 0 1-3.19 3.37l-.185.005H7.833a3.375 3.375 0 0 1-3.37-3.19l-.005-.185v-5a3.375 3.375 0 0 1 3.19-3.37l.185-.005h8.334zm0 1.75H7.833c-.85 0-1.548.653-1.619 1.485l-.006.14v5c0 .85.653 1.548 1.485 1.619l.14.006h8.334c.85 0 1.548-.653 1.619-1.485l.006-.14v-5c0-.85-.653-1.548-1.485-1.619l-.14-.006zM16 12.625v1.75h-6v-1.75h6z"/>
+  </g>
+</svg>
+</button>
+  </div>
+</article>
+<article class="docs-demo" data-id="utilities-stagger-stagger-parameters-stagger-jitter" data-color="11">
+  <header class="docs-demo-header">
+    <h2 class="text-ui">
+      Stagger jitter      <span class="badge">NEW</span>                </h2>
+  </header>
+  <div id="utilities-stagger-stagger-parameters-stagger-jitter" class="docs-demo-content">
+    <style async class="docs-demo-css">
+        </style>
+    <div class="docs-demo-html docs-demo-live demo">
+    <div class="small justified row">
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+</div>        </div>
+    <div class="docs-demo-html docs-demo-template">
+    <div class="small justified row">
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+</div>        </div>
+    <script class="docs-demo-js">
+window.demos['utilities-stagger-stagger-parameters-stagger-jitter'] = function(
+  ctx,
+  animate,
+  createTimeline,
+  createTimer,
+  createAnimatable,
+  createDraggable,
+  createLayout,
+  createScope,
+  onScroll,
+  engine,
+  eases,
+  steps,
+  linear,
+  irregular,
+  spring,
+  cubicBezier,
+  stagger,
+  utils,
+  svg,
+  waapi,
+  text,
+  splitText,
+  scrambleText,
+  createViewer,
+  getInstances,
+  commitChanges,
+) {
+animate('.square', {
+  y: ['-2.75rem', 2.75],
+  duration: 500,
+  delay: stagger(100, { jitter: 100 }),
+  ease: 'inOutQuad',
+  alternate: true,
+  loop: true,
+});
+}
+</script>
+      </div>
+  <div class="docs-nav-menu ui-group">
+              <button class="ui-input code-edit-button" title="Edit example on CodePen"><svg class="icon" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke-width="1.75"><polygon stroke="currentColor" points="13.5 8.5 7.5 14.5 7.5 17.5 10.5 17.5 16.5 11.5"/><path stroke="currentColor" d="M18.0857864,7.08578644 L17.9142136,6.91421356 C17.133165,6.13316498 15.866835,6.13316498 15.0857864,6.91421356 L13.5,8.5 L13.5,8.5 L16.5,11.5 L18.0857864,9.91421356 C18.866835,9.13316498 18.866835,7.86683502 18.0857864,7.08578644 Z"/></g></svg></button>
+          <button class="ui-input demo-reload-button" data-id="utilities-stagger-stagger-parameters-stagger-jitter" title="Refresh demo"><svg class="icon" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18.0104076,5.98959236 L18.0097074,10.8757002 L13.1243067,10.8749931 L14.9168155,9.08318453 C14.7588711,8.92524016 14.591305,8.78278169 14.416004,8.65580911 L14.2448263,8.53829933 L14.1371098,8.47076625 L13.9480605,8.36293733 L13.7659116,8.27106673 L13.6639309,8.22427402 L13.527,8.16859236 L13.3619515,8.10538106 L13.0709847,8.01574221 L12.8718507,7.96768109 L12.7151297,7.93698408 L12.5212881,7.90777003 L12.4261665,7.89693978 L12.2097893,7.88030511 L11.9960663,7.87500186 L11.7823517,7.88071033 L11.5786024,7.89645013 L11.2618565,7.94085619 L11.0866744,7.97645921 L10.7825793,8.05787657 L10.5824409,8.12517064 L10.3734129,8.20804866 L10.1970153,8.28864689 L10.1108524,8.33204891 C9.99719576,8.3907053 9.8866159,8.45448924 9.77941876,8.52309484 L9.59973855,8.64452049 L9.35092327,8.83790906 C9.18556048,8.97659012 9.03123567,9.12800249 8.88945733,9.29063767 L8.74812474,9.4614153 L8.68958969,9.53851461 L8.60105067,9.66146194 L8.47414064,9.85783057 L8.39504795,9.9934838 L8.32936425,10.1155307 L8.23929415,10.3023761 C8.15831703,10.4818452 8.09083992,10.6659201 8.0368628,10.8530651 C7.93143024,11.2167272 7.875,11.6017736 7.875,12 C7.875,14.2781746 9.72182541,16.125 12,16.125 C13.9333525,16.125 15.5560509,14.7949318 16.0029785,12.9999121 L17.7901334,13.0005982 C17.3151731,15.7686406 14.9035699,17.875 12,17.875 C8.75532709,17.875 6.125,15.2446729 6.125,12 C6.125,11.2278045 6.27397809,10.4904048 6.54476016,9.8149748 L6.66977806,9.52595215 L6.8191583,9.22642108 L6.94536978,9.00296435 L7.0375393,8.85370907 L7.11693936,8.73128812 L7.27481186,8.50749878 L7.48447137,8.24100422 L7.65875746,8.04139229 L7.84574766,7.84574766 L7.97056232,7.72450669 L8.22033943,7.50182263 L8.48683851,7.29064127 L8.53289754,7.2566322 C8.6990325,7.1345321 8.87017642,7.02246737 9.04549311,6.92030533 L9.38637864,6.73693467 L9.60279001,6.63472714 L9.70370878,6.59066027 L9.9093334,6.50787023 L10.1516638,6.42194344 L10.3754461,6.3529011 L10.559856,6.30280265 L10.8574265,6.2365504 L11.0895665,6.19555985 L11.3001989,6.16657685 L11.5356036,6.14327045 L11.7631086,6.12971107 L12,6.125 C12.1257143,6.125 12.2507365,6.12898444 12.3749241,6.13685601 L12.7168017,6.16862972 L13.0038549,6.21082943 L13.2075613,6.2497529 L13.4423976,6.30388598 L13.6921015,6.37276113 L14.0328644,6.48681143 L14.3072123,6.59536992 L14.591522,6.72568265 L14.6764297,6.7689309 L14.8635074,6.86845043 L15.0861432,6.99982731 L15.3048531,7.14170066 L15.5309991,7.30359276 L15.7300123,7.46012938 L15.9070204,7.61160776 L16.1542523,7.84574766 L18.0104076,5.98959236 Z"/></svg></button>
         <button class="ui-input minimise-demo-button" title="Minimize demo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
   <g id="minimize" fill="none" fill-rule="evenodd">
     <path id="Shape" fill="#FFFFFF" fill-rule="nonzero" d="M16.167 6.125a3.375 3.375 0 0 1 3.37 3.19l.005.185v5a3.375 3.375 0 0 1-3.19 3.37l-.185.005H7.833a3.375 3.375 0 0 1-3.37-3.19l-.005-.185v-5a3.375 3.375 0 0 1 3.19-3.37l.185-.005h8.334zm0 1.75H7.833c-.85 0-1.548.653-1.619 1.485l-.006.14v5c0 .85.653 1.548 1.485 1.619l.14.006h8.334c.85 0 1.548-.653 1.619-1.485l.006-.14v-5c0-.85-.653-1.548-1.485-1.619l-.14-.006zM16 12.625v1.75h-6v-1.75h6z"/>
@@ -29535,6 +30304,8 @@ window.demos['utilities-dollar-sign'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 // Targets all the '.square' elements
 utils.$('.square').forEach($square => {
@@ -29621,6 +30392,8 @@ window.demos['utilities-get'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $raw, $rem, $num ] = utils.$('.value');
 const [ $sq1, $sq2, $sq3 ] = utils.$('.square');
@@ -29719,6 +30492,8 @@ window.demos['utilities-set'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $set, $revert ] = utils.$('button');
 const squares = utils.$('.square');
@@ -29814,16 +30589,18 @@ window.demos['utilities-clean-inline-styles'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 utils.set('.square', { scale: .75 });
 
 animate('.keep-styles', {
-  x: '23rem',
+  x: '17rem',
   borderRadius: '50%',
 });
 
 animate('.clean-styles', {
-  x: '23rem',
+  x: '17rem',
   borderRadius: '50%',
   // This removes the translateX and borderRadius inline styles
   // But keeps the scale previously added outside of this animation
@@ -29913,6 +30690,8 @@ window.demos['utilities-remove'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 let updates = 0;
 
@@ -30011,6 +30790,8 @@ window.demos['utilities-sync'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $range ] = utils.$('.range');
 const [ $speed ] = utils.$('.speed');
@@ -30113,6 +30894,8 @@ window.demos['utilities-createtimekeeper'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $button ] = utils.$('button');
 const clocks = utils.$('.clock');
@@ -30208,6 +30991,8 @@ window.demos['utilities-random'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 utils.set('.square', {
   x: () => utils.random(2, 18, 2) + 'rem',
@@ -30288,6 +31073,8 @@ window.demos['utilities-createseededrandom'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const seededRandom = utils.createSeededRandom(12345);
 
@@ -30370,6 +31157,8 @@ window.demos['utilities-random-pick'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 utils.set('.letter', {
   x: () => utils.randomPick([5, 9, 13, 17]) + 'rem',
@@ -30465,6 +31254,8 @@ window.demos['utilities-shuffle'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $shuffle ] = utils.$('button');
 const squares = utils.$('.square');
@@ -30548,6 +31339,8 @@ window.demos['utilities-round'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.normal', {
   rotate: '1turn',
@@ -30631,6 +31424,8 @@ window.demos['utilities-clamp'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.normal', {
   rotate: '1turn',
@@ -30716,6 +31511,8 @@ window.demos['utilities-snap'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.normal', {
   rotate: '1turn',
@@ -30801,6 +31598,8 @@ window.demos['utilities-wrap'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.normal', {
   rotate: '1turn',
@@ -30886,6 +31685,8 @@ window.demos['utilities-map-range'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.normal', {
   rotate: '12turn',
@@ -30971,6 +31772,8 @@ window.demos['utilities-lerp'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.normal', {
   rotate: '1turn',
@@ -31064,6 +31867,8 @@ window.demos['utilities-damp'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $input ] = utils.$('.input');
 const [ $lerped ] = utils.$('.lerped');
@@ -31158,6 +31963,8 @@ window.demos['utilities-round-pad'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.value', {
   innerHTML: '8.1',
@@ -31225,6 +32032,8 @@ window.demos['utilities-pad-start'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.value', {
   innerHTML: 10000,
@@ -31292,6 +32101,8 @@ window.demos['utilities-pad-end'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.value', {
   innerHTML: 1,
@@ -31369,6 +32180,8 @@ window.demos['utilities-deg-to-rad'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const radAnimatable = createAnimatable('.rad', {
   rotate: { unit: 'rad', duration: 0 },
@@ -31455,6 +32268,8 @@ window.demos['utilities-rad-to-deg'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const degAnimatable = createAnimatable('.deg', {
   rotate: { unit: 'deg', duration: 0 }
@@ -31531,6 +32346,8 @@ window.demos['utilities-chain-able-utility-functions'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.value', {
   innerHTML: 1000,
@@ -31614,6 +32431,8 @@ window.demos['easings'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.row:nth-child(1) .square', {
   x: '17rem',
@@ -31706,6 +32525,8 @@ window.demos['easings-built-in-eases'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.row:nth-child(1) .square', {
   x: '17rem',
@@ -31798,6 +32619,8 @@ window.demos['easings-cubic-bezier-easing'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.row:nth-child(1) .square', {
   x: '17rem',
@@ -31890,6 +32713,8 @@ window.demos['easings-linear-easing'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.row:nth-child(1) .square', {
   x: '17rem',
@@ -31985,6 +32810,8 @@ window.demos['easings-steps-easing'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.row:nth-child(1) .square', {
   x: '17rem',
@@ -32077,6 +32904,8 @@ window.demos['easings-irregular-easing'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 animate('.row:nth-child(1) .square', {
   x: '17rem',
@@ -32172,6 +33001,8 @@ window.demos['easings-spring'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $square1, $square2, $square3 ] = utils.$('.square');
 
@@ -32269,6 +33100,8 @@ window.demos['web-animation-api'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const { chars } = splitText('h2', { words: false, chars: true });
 
@@ -32344,6 +33177,8 @@ window.demos['web-animation-api-when-to-use-waapi'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 // WAAPI Animation
 
@@ -32443,6 +33278,8 @@ window.demos['web-animation-api-hardware-accelerated-animations'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $block ] = utils.$('.button');
 
@@ -32535,6 +33372,8 @@ window.demos['web-animation-api-improvements-to-the-web-animation-api'] = functi
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -32591,6 +33430,8 @@ window.demos['web-animation-api-improvements-to-the-web-animation-api-sensible-d
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 waapi.animate('.circle', { translate: '16rem' });
 }
@@ -32661,6 +33502,8 @@ window.demos['web-animation-api-improvements-to-the-web-animation-api-multi-targ
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 waapi.animate('.circle', {
   translate: '17rem',
@@ -32742,6 +33585,8 @@ window.demos['web-animation-api-improvements-to-the-web-animation-api-default-un
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 waapi.animate('.square', {
   opacity: .5,
@@ -32824,6 +33669,8 @@ window.demos['web-animation-api-improvements-to-the-web-animation-api-function-b
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 waapi.animate('.square', {
   translate: () => `${utils.random(10, 17)}rem`,
@@ -32906,6 +33753,8 @@ window.demos['web-animation-api-improvements-to-the-web-animation-api-individual
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const $squares = utils.$('.square');
 
@@ -32986,6 +33835,8 @@ window.demos['web-animation-api-improvements-to-the-web-animation-api-individual
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 waapi.animate('.square', {
   y: {
@@ -33065,6 +33916,8 @@ window.demos['web-animation-api-improvements-to-the-web-animation-api-spring-and
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 waapi.animate('.circle', {
   y: [0, -30, 0],
@@ -33124,6 +33977,8 @@ window.demos['web-animation-api-api-differences-with-native-waapi'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -33192,6 +34047,8 @@ window.demos['web-animation-api-api-differences-with-native-waapi-iterations'] =
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 waapi.animate('.square', {
   translate: '17rem',
@@ -33267,6 +34124,8 @@ window.demos['web-animation-api-api-differences-with-native-waapi-direction'] = 
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 waapi.animate('.square', {
   translate: '17rem',
@@ -33341,6 +34200,8 @@ window.demos['web-animation-api-api-differences-with-native-waapi-easing'] = fun
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 waapi.animate('.square', {
   translate: '17rem',
@@ -33411,6 +34272,8 @@ window.demos['web-animation-api-api-differences-with-native-waapi-finished'] = f
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $value ] = utils.$('.value');
 
@@ -33495,6 +34358,8 @@ window.demos['web-animation-api-waapi-convertease'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const springs = [
   spring({ stiffness: 100 }),
@@ -33565,6 +34430,8 @@ window.demos['engine'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -33617,6 +34484,8 @@ window.demos['engine-engine-parameters'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -33707,6 +34576,8 @@ window.demos['engine-engine-parameters-timeunit-seconds-milliseconds'] = functio
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $timeS ] = utils.$('.time-s');
 const [ $timeMs ] = utils.$('.time-ms');
@@ -33799,6 +34670,8 @@ window.demos['engine-engine-parameters-speed'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $container ] = utils.$('.container');
 const [ $range ] = utils.$('.range');
@@ -33886,6 +34759,8 @@ window.demos['engine-engine-parameters-fps'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $container ] = utils.$('.container');
 const [ $range ] = utils.$('.range');
@@ -33973,6 +34848,8 @@ window.demos['engine-engine-parameters-precision'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $container ] = utils.$('.container');
 const [ $range ] = utils.$('.range');
@@ -34086,6 +34963,8 @@ window.demos['engine-engine-parameters-pauseondocumenthidden'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $globalTime ] = utils.$('.global-time');
 const [ $engineTime ] = utils.$('.engine-time');
@@ -34171,6 +35050,8 @@ window.demos['engine-engine-methods'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -34194,9 +35075,9 @@ window.demos['engine-engine-methods'] = function(
     <style async class="docs-demo-css">
         </style>
     <div class="docs-demo-html docs-demo-live demo">
-    <div class="container large grid square-grid"></div>        </div>
+    <div class="full-container"></div>        </div>
     <div class="docs-demo-html docs-demo-template">
-    <div class="container large grid square-grid"></div>        </div>
+    <div class="full-container"></div>        </div>
     <script class="docs-demo-js">
 window.demos['engine-engine-methods-update'] = function(
   ctx,
@@ -34223,16 +35104,18 @@ window.demos['engine-engine-methods-update'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 // Prevents Anime.js from using its own loop
 engine.useDefaultMainLoop = false;
 
-const [ $container ] = utils.$('.container');
+const [ $container ] = utils.$('.full-container');
 const color = utils.get($container, 'color');
 const { width, height } = $container.getBoundingClientRect();
 
-// Three.js setup, note that the global THREE object is defined globally
-const renderer = new THREE.WebGLRenderer({ alpha: true });
+// Three.js setup
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, preserveDrawingBuffer: true });
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(65, width / height, 0.1, 20);
 const geometry = new THREE.BoxGeometry(1, 1, 1);
@@ -34245,19 +35128,21 @@ camera.position.z = 5;
 
 function createAnimatedCube() {
   const cube = new THREE.Mesh(geometry, material);
-  const x = utils.random(-10, 10, 2);
-  const y = utils.random(-5, 5, 2);
-  const z = [-10, 7];
-  const r = () => utils.random(-Math.PI * 2, Math.PI * 2, 3);
-  const duration = 4000;
-  createTimeline({
-    delay: utils.random(0, duration),
-    defaults: { loop: true, duration, ease: 'inSine', },
-  })
-  .add(cube.position, { x, y, z }, 0)
-  .add(cube.rotation, { x: r, y: r, z: r }, 0)
-  .init();
+  const r = () => utils.random(-720, 720, 1);
   scene.add(cube);
+  // The three.js adapter maps x / y / z and rotateX / Y / Z (degrees) directly onto the mesh.
+  animate(cube, {
+    x: utils.random(-10, 10, 2),
+    y: utils.random(-5, 5, 2),
+    z: [-10, 7],
+    rotateX: r,
+    rotateY: r,
+    rotateZ: r,
+    delay: utils.random(0, 4000),
+    duration: 4000,
+    loop: true,
+    ease: 'inSine',
+  });
 }
 
 for (let i = 0; i < 40; i++) {
@@ -34272,7 +35157,10 @@ function render() {
 // Calls the builtin Three.js animation loop
 renderer.setAnimationLoop(render);return function() {
 renderer.setAnimationLoop(null);
-engine.useDefaultMainLoop = true;}
+engine.useDefaultMainLoop = true;
+geometry.dispose();
+material.dispose();
+renderer.dispose();}
 
 }
 </script>
@@ -34338,6 +35226,8 @@ window.demos['engine-engine-methods-pause'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $container ] = utils.$('.container');
 const [ $add, $pause ] = utils.$('button');
@@ -34445,6 +35335,8 @@ window.demos['engine-engine-methods-resume'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 const [ $container ] = utils.$('.container');
 const [ $pause, $resume ] = utils.$('button');
@@ -34525,6 +35417,8 @@ window.demos['engine-engine-properties'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }
@@ -34577,6 +35471,859 @@ window.demos['engine-engine-defaults'] = function(
   splitText,
   scrambleText,
   createViewer,
+  getInstances,
+  commitChanges,
+) {
+
+}
+</script>
+      </div>
+  <div class="docs-nav-menu ui-group">
+        <button class="ui-input minimise-demo-button" title="Minimize demo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g id="minimize" fill="none" fill-rule="evenodd">
+    <path id="Shape" fill="#FFFFFF" fill-rule="nonzero" d="M16.167 6.125a3.375 3.375 0 0 1 3.37 3.19l.005.185v5a3.375 3.375 0 0 1-3.19 3.37l-.185.005H7.833a3.375 3.375 0 0 1-3.37-3.19l-.005-.185v-5a3.375 3.375 0 0 1 3.19-3.37l.185-.005h8.334zm0 1.75H7.833c-.85 0-1.548.653-1.619 1.485l-.006.14v5c0 .85.653 1.548 1.485 1.619l.14.006h8.334c.85 0 1.548-.653 1.619-1.485l.006-.14v-5c0-.85-.653-1.548-1.485-1.619l-.14-.006zM16 12.625v1.75h-6v-1.75h6z"/>
+  </g>
+</svg>
+</button>
+  </div>
+</article>
+<article class="docs-demo" data-id="adapters" data-color="15">
+  <header class="docs-demo-header">
+    <h2 class="text-ui">
+      Adapters      <span class="badge">NEW</span>                </h2>
+  </header>
+  <div id="adapters" class="docs-demo-content dotted-grid">
+    <style async class="docs-demo-css">
+        </style>
+    <div class="docs-demo-html docs-demo-live demo">
+            </div>
+    <div class="docs-demo-html docs-demo-template">
+            </div>
+    <script class="docs-demo-js">
+window.demos['adapters'] = function(
+  ctx,
+  animate,
+  createTimeline,
+  createTimer,
+  createAnimatable,
+  createDraggable,
+  createLayout,
+  createScope,
+  onScroll,
+  engine,
+  eases,
+  steps,
+  linear,
+  irregular,
+  spring,
+  cubicBezier,
+  stagger,
+  utils,
+  svg,
+  waapi,
+  text,
+  splitText,
+  scrambleText,
+  createViewer,
+  getInstances,
+  commitChanges,
+) {
+
+}
+</script>
+      </div>
+  <div class="docs-nav-menu ui-group">
+        <button class="ui-input minimise-demo-button" title="Minimize demo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g id="minimize" fill="none" fill-rule="evenodd">
+    <path id="Shape" fill="#FFFFFF" fill-rule="nonzero" d="M16.167 6.125a3.375 3.375 0 0 1 3.37 3.19l.005.185v5a3.375 3.375 0 0 1-3.19 3.37l-.185.005H7.833a3.375 3.375 0 0 1-3.37-3.19l-.005-.185v-5a3.375 3.375 0 0 1 3.19-3.37l.185-.005h8.334zm0 1.75H7.833c-.85 0-1.548.653-1.619 1.485l-.006.14v5c0 .85.653 1.548 1.485 1.619l.14.006h8.334c.85 0 1.548-.653 1.619-1.485l.006-.14v-5c0-.85-.653-1.548-1.485-1.619l-.14-.006zM16 12.625v1.75h-6v-1.75h6z"/>
+  </g>
+</svg>
+</button>
+  </div>
+</article>
+  <article class="docs-demo" data-id="adapters-threejs-adapter" data-color="15">
+  <header class="docs-demo-header">
+    <h2 class="text-ui">
+      Three.js adapter      <span class="badge">NEW</span>                </h2>
+  </header>
+  <div id="adapters-threejs-adapter" class="docs-demo-content">
+    <style async class="docs-demo-css">
+        </style>
+    <div class="docs-demo-html docs-demo-live demo">
+    <div class="full-container"></div>        </div>
+    <div class="docs-demo-html docs-demo-template">
+    <div class="full-container"></div>        </div>
+    <script class="docs-demo-js">
+window.demos['adapters-threejs-adapter'] = function(
+  ctx,
+  animate,
+  createTimeline,
+  createTimer,
+  createAnimatable,
+  createDraggable,
+  createLayout,
+  createScope,
+  onScroll,
+  engine,
+  eases,
+  steps,
+  linear,
+  irregular,
+  spring,
+  cubicBezier,
+  stagger,
+  utils,
+  svg,
+  waapi,
+  text,
+  splitText,
+  scrambleText,
+  createViewer,
+  getInstances,
+  commitChanges,
+) {
+// Three.js setup
+
+const [ $container ] = utils.$('.full-container');
+const color = utils.get($container, 'color');
+const { width, height } = $container.getBoundingClientRect();
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, preserveDrawingBuffer: true });
+renderer.shadowMap.enabled = true;
+renderer.setSize(width, height);
+renderer.setPixelRatio(window.devicePixelRatio);
+$container.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 100);
+camera.position.z = 6;
+scene.add(camera);
+
+scene.add(new THREE.AmbientLight(0xffffff, 0.25));
+const pointLight = new THREE.PointLight(0xffffff, 8, 20, 0.4);
+pointLight.castShadow = true;
+scene.add(pointLight);
+
+const dirLight = new THREE.DirectionalLight(0xffffff, 2);
+dirLight.position.set(2, 3, 4);
+scene.add(dirLight);
+
+const gridSize = 4; // cubes per axis
+const cellSize = 2 / gridSize; // size of each cube
+const spread = (gridSize - 1) / 2 * cellSize; // distance from center to the outer cubes
+const geometry = new THREE.BoxGeometry(cellSize, cellSize, cellSize);
+const material = new THREE.MeshLambertMaterial({ color });
+const mesh = new THREE.InstancedMesh(geometry, material, gridSize * gridSize * gridSize);
+mesh.castShadow = mesh.receiveShadow = true;
+scene.add(mesh);
+
+// Animation with Three.js adapter
+
+const instances = getInstances(mesh);
+
+utils.set(instances, {
+  x: stagger([-spread, spread], { grid: [gridSize, gridSize, gridSize], axis: 'x' }),
+  y: stagger([-spread, spread], { grid: [gridSize, gridSize, gridSize], axis: 'y' }),
+  z: stagger([-spread, spread], { grid: [gridSize, gridSize, gridSize], axis: 'z' }),
+});
+
+animate(mesh, {
+  rotateY: { to: 360, duration: 9000 },
+  rotateX: { to: 360, duration: 12000 },
+  loop: true,
+  ease: 'inOutQuad',
+});
+
+animate(pointLight, {
+  intensity: [30, 0],
+  duration: 2500,
+  loop: true,
+  loopDelay: 500,
+  alternate: true,
+  ease: 'out(3)',
+});
+
+animate(instances, {
+  x: (instance) => instance.x * 10,
+  y: (instance) => instance.y * 10,
+  z: (instance) => instance.z * 10,
+  duration: 2000,
+  delay: stagger([0, 500], { grid: true, from: 'center', reversed: true, ease: 'in(3)' }),
+  loop: true,
+  loopDelay: 500,
+  alternate: true,
+  ease: 'inOutExpo',
+});
+
+createTimer({ onUpdate: () => renderer.render(scene, camera) });return function() {
+mesh.dispose();
+geometry.dispose();
+material.dispose();
+renderer.dispose();}
+
+}
+</script>
+      </div>
+  <div class="docs-nav-menu ui-group">
+              <button class="ui-input code-edit-button" title="Edit example on CodePen"><svg class="icon" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke-width="1.75"><polygon stroke="currentColor" points="13.5 8.5 7.5 14.5 7.5 17.5 10.5 17.5 16.5 11.5"/><path stroke="currentColor" d="M18.0857864,7.08578644 L17.9142136,6.91421356 C17.133165,6.13316498 15.866835,6.13316498 15.0857864,6.91421356 L13.5,8.5 L13.5,8.5 L16.5,11.5 L18.0857864,9.91421356 C18.866835,9.13316498 18.866835,7.86683502 18.0857864,7.08578644 Z"/></g></svg></button>
+          <button class="ui-input demo-reload-button" data-id="adapters-threejs-adapter" title="Refresh demo"><svg class="icon" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18.0104076,5.98959236 L18.0097074,10.8757002 L13.1243067,10.8749931 L14.9168155,9.08318453 C14.7588711,8.92524016 14.591305,8.78278169 14.416004,8.65580911 L14.2448263,8.53829933 L14.1371098,8.47076625 L13.9480605,8.36293733 L13.7659116,8.27106673 L13.6639309,8.22427402 L13.527,8.16859236 L13.3619515,8.10538106 L13.0709847,8.01574221 L12.8718507,7.96768109 L12.7151297,7.93698408 L12.5212881,7.90777003 L12.4261665,7.89693978 L12.2097893,7.88030511 L11.9960663,7.87500186 L11.7823517,7.88071033 L11.5786024,7.89645013 L11.2618565,7.94085619 L11.0866744,7.97645921 L10.7825793,8.05787657 L10.5824409,8.12517064 L10.3734129,8.20804866 L10.1970153,8.28864689 L10.1108524,8.33204891 C9.99719576,8.3907053 9.8866159,8.45448924 9.77941876,8.52309484 L9.59973855,8.64452049 L9.35092327,8.83790906 C9.18556048,8.97659012 9.03123567,9.12800249 8.88945733,9.29063767 L8.74812474,9.4614153 L8.68958969,9.53851461 L8.60105067,9.66146194 L8.47414064,9.85783057 L8.39504795,9.9934838 L8.32936425,10.1155307 L8.23929415,10.3023761 C8.15831703,10.4818452 8.09083992,10.6659201 8.0368628,10.8530651 C7.93143024,11.2167272 7.875,11.6017736 7.875,12 C7.875,14.2781746 9.72182541,16.125 12,16.125 C13.9333525,16.125 15.5560509,14.7949318 16.0029785,12.9999121 L17.7901334,13.0005982 C17.3151731,15.7686406 14.9035699,17.875 12,17.875 C8.75532709,17.875 6.125,15.2446729 6.125,12 C6.125,11.2278045 6.27397809,10.4904048 6.54476016,9.8149748 L6.66977806,9.52595215 L6.8191583,9.22642108 L6.94536978,9.00296435 L7.0375393,8.85370907 L7.11693936,8.73128812 L7.27481186,8.50749878 L7.48447137,8.24100422 L7.65875746,8.04139229 L7.84574766,7.84574766 L7.97056232,7.72450669 L8.22033943,7.50182263 L8.48683851,7.29064127 L8.53289754,7.2566322 C8.6990325,7.1345321 8.87017642,7.02246737 9.04549311,6.92030533 L9.38637864,6.73693467 L9.60279001,6.63472714 L9.70370878,6.59066027 L9.9093334,6.50787023 L10.1516638,6.42194344 L10.3754461,6.3529011 L10.559856,6.30280265 L10.8574265,6.2365504 L11.0895665,6.19555985 L11.3001989,6.16657685 L11.5356036,6.14327045 L11.7631086,6.12971107 L12,6.125 C12.1257143,6.125 12.2507365,6.12898444 12.3749241,6.13685601 L12.7168017,6.16862972 L13.0038549,6.21082943 L13.2075613,6.2497529 L13.4423976,6.30388598 L13.6921015,6.37276113 L14.0328644,6.48681143 L14.3072123,6.59536992 L14.591522,6.72568265 L14.6764297,6.7689309 L14.8635074,6.86845043 L15.0861432,6.99982731 L15.3048531,7.14170066 L15.5309991,7.30359276 L15.7300123,7.46012938 L15.9070204,7.61160776 L16.1542523,7.84574766 L18.0104076,5.98959236 Z"/></svg></button>
+        <button class="ui-input minimise-demo-button" title="Minimize demo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g id="minimize" fill="none" fill-rule="evenodd">
+    <path id="Shape" fill="#FFFFFF" fill-rule="nonzero" d="M16.167 6.125a3.375 3.375 0 0 1 3.37 3.19l.005.185v5a3.375 3.375 0 0 1-3.19 3.37l-.185.005H7.833a3.375 3.375 0 0 1-3.37-3.19l-.005-.185v-5a3.375 3.375 0 0 1 3.19-3.37l.185-.005h8.334zm0 1.75H7.833c-.85 0-1.548.653-1.619 1.485l-.006.14v5c0 .85.653 1.548 1.485 1.619l.14.006h8.334c.85 0 1.548-.653 1.619-1.485l.006-.14v-5c0-.85-.653-1.548-1.485-1.619l-.14-.006zM16 12.625v1.75h-6v-1.75h6z"/>
+  </g>
+</svg>
+</button>
+  </div>
+</article>
+  <article class="docs-demo" data-id="adapters-threejs-adapter-threejs-object-property-adapter" data-color="15">
+  <header class="docs-demo-header">
+    <h2 class="text-ui">
+      Three.js object properties                      </h2>
+  </header>
+  <div id="adapters-threejs-adapter-threejs-object-property-adapter" class="docs-demo-content">
+    <style async class="docs-demo-css">
+        </style>
+    <div class="docs-demo-html docs-demo-live demo">
+    <div class="full-container"></div>        </div>
+    <div class="docs-demo-html docs-demo-template">
+    <div class="full-container"></div>        </div>
+    <script class="docs-demo-js">
+window.demos['adapters-threejs-adapter-threejs-object-property-adapter'] = function(
+  ctx,
+  animate,
+  createTimeline,
+  createTimer,
+  createAnimatable,
+  createDraggable,
+  createLayout,
+  createScope,
+  onScroll,
+  engine,
+  eases,
+  steps,
+  linear,
+  irregular,
+  spring,
+  cubicBezier,
+  stagger,
+  utils,
+  svg,
+  waapi,
+  text,
+  splitText,
+  scrambleText,
+  createViewer,
+  getInstances,
+  commitChanges,
+) {
+// Three.js setup
+
+const [ $container ] = utils.$('.full-container');
+const color = utils.get($container, 'color');
+const { width, height } = $container.getBoundingClientRect();
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, preserveDrawingBuffer: true });
+renderer.shadowMap.enabled = true;
+renderer.setSize(width, height);
+renderer.setPixelRatio(window.devicePixelRatio);
+$container.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
+camera.position.set(0, 2.5, 6);
+camera.lookAt(0, 0, -3);
+scene.add(camera);
+
+const container = new THREE.Group();
+scene.add(container);
+
+const groundGeometry = new THREE.PlaneGeometry(12, 12);
+const groundMaterial = new THREE.MeshLambertMaterial({ color });
+const ground = new THREE.Mesh(groundGeometry, groundMaterial);
+ground.rotation.x = -Math.PI / 2;
+ground.receiveShadow = true;
+container.add(ground);
+
+const gridColorA = utils.get($container, '--hex-current-1');
+const gridColorB = utils.get($container, '--hex-current-3');
+const grid = new THREE.GridHelper(12, 24, gridColorA, gridColorB);
+grid.position.y = 0.001;
+container.add(grid);
+
+const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
+const cubeMaterial = new THREE.MeshLambertMaterial({ color });
+const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+cube.position.y = 0.5;
+cube.castShadow = true;
+container.add(cube);
+
+const spot = new THREE.SpotLight(0xffffff, 100, 12, Math.PI / 5, 0.4);
+spot.position.set(0, 3, 0);
+spot.castShadow = true;
+spot.target = cube;
+container.add(new THREE.AmbientLight(0xffffff, 0.3));
+container.add(spot);
+
+const spotHelper = new THREE.SpotLightHelper(spot, color);
+container.add(spotHelper);
+
+// Animation with Three.js adapter
+
+createTimeline({ defaults: { duration: 5000, ease: 'linear', loop: true } })
+  .add(container, {
+    rotateY: 360, // map to container.rotation.y (degrees)
+    duration: 40000,
+  }, 0)
+  .add(spot, {
+    x: () => utils.random(-7, 7, 1), // map to spot.position.x
+    y: () => utils.random(3, 4, 1), // map to spot.position.y
+    z: () => utils.random(-7, 7, 1), // map to spot.position.z
+    duration: 3000,
+    ease: 'inOutSine',
+    onLoop: self => self.refresh(),
+  }, 0)
+  .add(cube, {
+    color: ['var(--hex-orange-1)', 'var(--hex-citrus-1)', 'var(--hex-green-1)'], // map to cube.material.color
+    x: [-4, 0, 4], // map to cube.position.x
+    y: {
+      to: [0, 4 * Math.PI], // map to cube.position.y (via modifier)
+      modifier: value => 0.5 * (Math.abs(Math.sin(value)) + Math.abs(Math.cos(value))),
+    },
+    rotateZ: [360, 0, -360], // map to cube.rotation.z (degrees)
+    alternate: true,
+    onUpdate: () => spotHelper.update(),
+  }, 0);
+
+createTimer({ onUpdate: () => renderer.render(scene, camera) });return function() {
+cubeGeometry.dispose();
+cubeMaterial.dispose();
+groundGeometry.dispose();
+groundMaterial.dispose();
+grid.geometry.dispose();
+grid.material.dispose();
+spotHelper.dispose();
+renderer.dispose();}
+
+}
+</script>
+      </div>
+  <div class="docs-nav-menu ui-group">
+              <button class="ui-input code-edit-button" title="Edit example on CodePen"><svg class="icon" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke-width="1.75"><polygon stroke="currentColor" points="13.5 8.5 7.5 14.5 7.5 17.5 10.5 17.5 16.5 11.5"/><path stroke="currentColor" d="M18.0857864,7.08578644 L17.9142136,6.91421356 C17.133165,6.13316498 15.866835,6.13316498 15.0857864,6.91421356 L13.5,8.5 L13.5,8.5 L16.5,11.5 L18.0857864,9.91421356 C18.866835,9.13316498 18.866835,7.86683502 18.0857864,7.08578644 Z"/></g></svg></button>
+          <button class="ui-input demo-reload-button" data-id="adapters-threejs-adapter-threejs-object-property-adapter" title="Refresh demo"><svg class="icon" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18.0104076,5.98959236 L18.0097074,10.8757002 L13.1243067,10.8749931 L14.9168155,9.08318453 C14.7588711,8.92524016 14.591305,8.78278169 14.416004,8.65580911 L14.2448263,8.53829933 L14.1371098,8.47076625 L13.9480605,8.36293733 L13.7659116,8.27106673 L13.6639309,8.22427402 L13.527,8.16859236 L13.3619515,8.10538106 L13.0709847,8.01574221 L12.8718507,7.96768109 L12.7151297,7.93698408 L12.5212881,7.90777003 L12.4261665,7.89693978 L12.2097893,7.88030511 L11.9960663,7.87500186 L11.7823517,7.88071033 L11.5786024,7.89645013 L11.2618565,7.94085619 L11.0866744,7.97645921 L10.7825793,8.05787657 L10.5824409,8.12517064 L10.3734129,8.20804866 L10.1970153,8.28864689 L10.1108524,8.33204891 C9.99719576,8.3907053 9.8866159,8.45448924 9.77941876,8.52309484 L9.59973855,8.64452049 L9.35092327,8.83790906 C9.18556048,8.97659012 9.03123567,9.12800249 8.88945733,9.29063767 L8.74812474,9.4614153 L8.68958969,9.53851461 L8.60105067,9.66146194 L8.47414064,9.85783057 L8.39504795,9.9934838 L8.32936425,10.1155307 L8.23929415,10.3023761 C8.15831703,10.4818452 8.09083992,10.6659201 8.0368628,10.8530651 C7.93143024,11.2167272 7.875,11.6017736 7.875,12 C7.875,14.2781746 9.72182541,16.125 12,16.125 C13.9333525,16.125 15.5560509,14.7949318 16.0029785,12.9999121 L17.7901334,13.0005982 C17.3151731,15.7686406 14.9035699,17.875 12,17.875 C8.75532709,17.875 6.125,15.2446729 6.125,12 C6.125,11.2278045 6.27397809,10.4904048 6.54476016,9.8149748 L6.66977806,9.52595215 L6.8191583,9.22642108 L6.94536978,9.00296435 L7.0375393,8.85370907 L7.11693936,8.73128812 L7.27481186,8.50749878 L7.48447137,8.24100422 L7.65875746,8.04139229 L7.84574766,7.84574766 L7.97056232,7.72450669 L8.22033943,7.50182263 L8.48683851,7.29064127 L8.53289754,7.2566322 C8.6990325,7.1345321 8.87017642,7.02246737 9.04549311,6.92030533 L9.38637864,6.73693467 L9.60279001,6.63472714 L9.70370878,6.59066027 L9.9093334,6.50787023 L10.1516638,6.42194344 L10.3754461,6.3529011 L10.559856,6.30280265 L10.8574265,6.2365504 L11.0895665,6.19555985 L11.3001989,6.16657685 L11.5356036,6.14327045 L11.7631086,6.12971107 L12,6.125 C12.1257143,6.125 12.2507365,6.12898444 12.3749241,6.13685601 L12.7168017,6.16862972 L13.0038549,6.21082943 L13.2075613,6.2497529 L13.4423976,6.30388598 L13.6921015,6.37276113 L14.0328644,6.48681143 L14.3072123,6.59536992 L14.591522,6.72568265 L14.6764297,6.7689309 L14.8635074,6.86845043 L15.0861432,6.99982731 L15.3048531,7.14170066 L15.5309991,7.30359276 L15.7300123,7.46012938 L15.9070204,7.61160776 L16.1542523,7.84574766 L18.0104076,5.98959236 Z"/></svg></button>
+        <button class="ui-input minimise-demo-button" title="Minimize demo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g id="minimize" fill="none" fill-rule="evenodd">
+    <path id="Shape" fill="#FFFFFF" fill-rule="nonzero" d="M16.167 6.125a3.375 3.375 0 0 1 3.37 3.19l.005.185v5a3.375 3.375 0 0 1-3.19 3.37l-.185.005H7.833a3.375 3.375 0 0 1-3.37-3.19l-.005-.185v-5a3.375 3.375 0 0 1 3.19-3.37l.185-.005h8.334zm0 1.75H7.833c-.85 0-1.548.653-1.619 1.485l-.006.14v5c0 .85.653 1.548 1.485 1.619l.14.006h8.334c.85 0 1.548-.653 1.619-1.485l.006-.14v-5c0-.85-.653-1.548-1.485-1.619l-.14-.006zM16 12.625v1.75h-6v-1.75h6z"/>
+  </g>
+</svg>
+</button>
+  </div>
+</article>
+<article class="docs-demo" data-id="adapters-threejs-adapter-threejs-transforms-adapter" data-color="15">
+  <header class="docs-demo-header">
+    <h2 class="text-ui">
+      Three.js extended transforms                      </h2>
+  </header>
+  <div id="adapters-threejs-adapter-threejs-transforms-adapter" class="docs-demo-content">
+    <style async class="docs-demo-css">
+        </style>
+    <div class="docs-demo-html docs-demo-live demo">
+    <div class="full-container"></div>        </div>
+    <div class="docs-demo-html docs-demo-template">
+    <div class="full-container"></div>        </div>
+    <script class="docs-demo-js">
+window.demos['adapters-threejs-adapter-threejs-transforms-adapter'] = function(
+  ctx,
+  animate,
+  createTimeline,
+  createTimer,
+  createAnimatable,
+  createDraggable,
+  createLayout,
+  createScope,
+  onScroll,
+  engine,
+  eases,
+  steps,
+  linear,
+  irregular,
+  spring,
+  cubicBezier,
+  stagger,
+  utils,
+  svg,
+  waapi,
+  text,
+  splitText,
+  scrambleText,
+  createViewer,
+  getInstances,
+  commitChanges,
+) {
+// Three.js setup
+
+const [ $container ] = utils.$('.full-container');
+const color = utils.get($container, 'color');
+const { width, height } = $container.getBoundingClientRect();
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, preserveDrawingBuffer: true });
+renderer.shadowMap.enabled = true;
+renderer.setSize(width, height);
+renderer.setPixelRatio(window.devicePixelRatio);
+$container.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(35, width / height, 0.1, 100);
+camera.position.set(0, 3, 8);
+camera.lookAt(0, 0.2, 0);
+const cameraRig = new THREE.Group().add(camera);
+scene.add(cameraRig);
+
+scene.add(new THREE.AmbientLight(0xffffff, 0.3));
+const spot = new THREE.SpotLight(0xffffff, 100, 12, Math.PI / 5, 0.4);
+spot.position.set(0, 5, 0);
+spot.castShadow = true;
+scene.add(spot);
+
+const dirLight = new THREE.DirectionalLight(0xffffff, 0.5);
+dirLight.position.set(2, 3, 4);
+scene.add(dirLight);
+
+const groundGeometry = new THREE.PlaneGeometry(12, 12);
+const groundMaterial = new THREE.MeshLambertMaterial({ color });
+const ground = new THREE.Mesh(groundGeometry, groundMaterial);
+ground.rotation.x = -Math.PI / 2;
+ground.receiveShadow = true;
+scene.add(ground);
+
+const gridColorA = utils.get($container, '--hex-current-1');
+const gridColorB = utils.get($container, '--hex-current-3');
+const grid = new THREE.GridHelper(12, 24, gridColorA, gridColorB);
+grid.position.y = 0.001;
+scene.add(grid);
+
+const geometry = new THREE.BoxGeometry(1, 1, 1);
+const cubes = [-2, 0, 2].map(x => {
+  const cube = new THREE.Mesh(geometry, new THREE.MeshLambertMaterial());
+  cube.position.set(x, 0.5, 0);
+  cube.castShadow = cube.receiveShadow = true;
+  scene.add(cube);
+  return cube;
+});
+
+// Animation with Three.js adapter
+
+animate(cameraRig, {
+  rotateY: 360,
+  duration: 20000,
+  loop: true,
+  ease: 'linear',
+});
+
+utils.set(cubes[0], { color: 'var(--hex-red-1)' });
+utils.set(cubes[1], { color: 'var(--hex-citrus-1)', transformOriginY: -0.5 });
+utils.set(cubes[2], { color: 'var(--hex-green-1)', transformOrigin: '-.5 -.5 .5' });
+
+// Cube 1: small up and down with rotation
+animate(cubes[0], {
+  y: [0.5, 1, 0.5],
+  rotateY: 180,
+  duration: 2000,
+  loop: true,
+  ease: 'inOutSine',
+});
+
+// Cube 2: skew left to right pivoting on its base
+animate(cubes[1], {
+  skewX: [-30, 30, 0, 0],
+  skewZ: [0, 0, -30, 30],
+  duration: 2000,
+  alternate: true,
+  loop: true,
+  ease: 'inOutSine',
+});
+
+// Cube 3: scale with the origin sliding from one corner to the opposite
+animate(cubes[2], {
+  scale: [1, .25, 1],
+  transformOrigin: ['-.5 -.5 .5', '.5 .5 -.5'],
+  duration: 2000,
+  alternate: true,
+  loop: true,
+  ease: 'inOutSine',
+});
+
+createTimer({ onUpdate: () => renderer.render(scene, camera) });return function() {
+geometry.dispose();
+cubes.forEach(c => c.material.dispose());
+groundGeometry.dispose();
+groundMaterial.dispose();
+grid.geometry.dispose();
+grid.material.dispose();
+renderer.dispose();}
+
+}
+</script>
+      </div>
+  <div class="docs-nav-menu ui-group">
+              <button class="ui-input code-edit-button" title="Edit example on CodePen"><svg class="icon" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke-width="1.75"><polygon stroke="currentColor" points="13.5 8.5 7.5 14.5 7.5 17.5 10.5 17.5 16.5 11.5"/><path stroke="currentColor" d="M18.0857864,7.08578644 L17.9142136,6.91421356 C17.133165,6.13316498 15.866835,6.13316498 15.0857864,6.91421356 L13.5,8.5 L13.5,8.5 L16.5,11.5 L18.0857864,9.91421356 C18.866835,9.13316498 18.866835,7.86683502 18.0857864,7.08578644 Z"/></g></svg></button>
+          <button class="ui-input demo-reload-button" data-id="adapters-threejs-adapter-threejs-transforms-adapter" title="Refresh demo"><svg class="icon" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18.0104076,5.98959236 L18.0097074,10.8757002 L13.1243067,10.8749931 L14.9168155,9.08318453 C14.7588711,8.92524016 14.591305,8.78278169 14.416004,8.65580911 L14.2448263,8.53829933 L14.1371098,8.47076625 L13.9480605,8.36293733 L13.7659116,8.27106673 L13.6639309,8.22427402 L13.527,8.16859236 L13.3619515,8.10538106 L13.0709847,8.01574221 L12.8718507,7.96768109 L12.7151297,7.93698408 L12.5212881,7.90777003 L12.4261665,7.89693978 L12.2097893,7.88030511 L11.9960663,7.87500186 L11.7823517,7.88071033 L11.5786024,7.89645013 L11.2618565,7.94085619 L11.0866744,7.97645921 L10.7825793,8.05787657 L10.5824409,8.12517064 L10.3734129,8.20804866 L10.1970153,8.28864689 L10.1108524,8.33204891 C9.99719576,8.3907053 9.8866159,8.45448924 9.77941876,8.52309484 L9.59973855,8.64452049 L9.35092327,8.83790906 C9.18556048,8.97659012 9.03123567,9.12800249 8.88945733,9.29063767 L8.74812474,9.4614153 L8.68958969,9.53851461 L8.60105067,9.66146194 L8.47414064,9.85783057 L8.39504795,9.9934838 L8.32936425,10.1155307 L8.23929415,10.3023761 C8.15831703,10.4818452 8.09083992,10.6659201 8.0368628,10.8530651 C7.93143024,11.2167272 7.875,11.6017736 7.875,12 C7.875,14.2781746 9.72182541,16.125 12,16.125 C13.9333525,16.125 15.5560509,14.7949318 16.0029785,12.9999121 L17.7901334,13.0005982 C17.3151731,15.7686406 14.9035699,17.875 12,17.875 C8.75532709,17.875 6.125,15.2446729 6.125,12 C6.125,11.2278045 6.27397809,10.4904048 6.54476016,9.8149748 L6.66977806,9.52595215 L6.8191583,9.22642108 L6.94536978,9.00296435 L7.0375393,8.85370907 L7.11693936,8.73128812 L7.27481186,8.50749878 L7.48447137,8.24100422 L7.65875746,8.04139229 L7.84574766,7.84574766 L7.97056232,7.72450669 L8.22033943,7.50182263 L8.48683851,7.29064127 L8.53289754,7.2566322 C8.6990325,7.1345321 8.87017642,7.02246737 9.04549311,6.92030533 L9.38637864,6.73693467 L9.60279001,6.63472714 L9.70370878,6.59066027 L9.9093334,6.50787023 L10.1516638,6.42194344 L10.3754461,6.3529011 L10.559856,6.30280265 L10.8574265,6.2365504 L11.0895665,6.19555985 L11.3001989,6.16657685 L11.5356036,6.14327045 L11.7631086,6.12971107 L12,6.125 C12.1257143,6.125 12.2507365,6.12898444 12.3749241,6.13685601 L12.7168017,6.16862972 L13.0038549,6.21082943 L13.2075613,6.2497529 L13.4423976,6.30388598 L13.6921015,6.37276113 L14.0328644,6.48681143 L14.3072123,6.59536992 L14.591522,6.72568265 L14.6764297,6.7689309 L14.8635074,6.86845043 L15.0861432,6.99982731 L15.3048531,7.14170066 L15.5309991,7.30359276 L15.7300123,7.46012938 L15.9070204,7.61160776 L16.1542523,7.84574766 L18.0104076,5.98959236 Z"/></svg></button>
+        <button class="ui-input minimise-demo-button" title="Minimize demo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g id="minimize" fill="none" fill-rule="evenodd">
+    <path id="Shape" fill="#FFFFFF" fill-rule="nonzero" d="M16.167 6.125a3.375 3.375 0 0 1 3.37 3.19l.005.185v5a3.375 3.375 0 0 1-3.19 3.37l-.185.005H7.833a3.375 3.375 0 0 1-3.37-3.19l-.005-.185v-5a3.375 3.375 0 0 1 3.19-3.37l.185-.005h8.334zm0 1.75H7.833c-.85 0-1.548.653-1.619 1.485l-.006.14v5c0 .85.653 1.548 1.485 1.619l.14.006h8.334c.85 0 1.548-.653 1.619-1.485l.006-.14v-5c0-.85-.653-1.548-1.485-1.619l-.14-.006zM16 12.625v1.75h-6v-1.75h6z"/>
+  </g>
+</svg>
+</button>
+  </div>
+</article>
+<article class="docs-demo" data-id="adapters-threejs-adapter-materials-and-uniforms" data-color="15">
+  <header class="docs-demo-header">
+    <h2 class="text-ui">
+      Three.js materials and uniforms                      </h2>
+  </header>
+  <div id="adapters-threejs-adapter-materials-and-uniforms" class="docs-demo-content">
+    <style async class="docs-demo-css">
+        </style>
+    <div class="docs-demo-html docs-demo-live demo">
+    <div class="full-container"></div>        </div>
+    <div class="docs-demo-html docs-demo-template">
+    <div class="full-container"></div>        </div>
+    <script class="docs-demo-js">
+window.demos['adapters-threejs-adapter-materials-and-uniforms'] = function(
+  ctx,
+  animate,
+  createTimeline,
+  createTimer,
+  createAnimatable,
+  createDraggable,
+  createLayout,
+  createScope,
+  onScroll,
+  engine,
+  eases,
+  steps,
+  linear,
+  irregular,
+  spring,
+  cubicBezier,
+  stagger,
+  utils,
+  svg,
+  waapi,
+  text,
+  splitText,
+  scrambleText,
+  createViewer,
+  getInstances,
+  commitChanges,
+) {
+// Three.js setup
+
+const [ $container ] = utils.$('.full-container');
+const { width, height } = $container.getBoundingClientRect();
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, preserveDrawingBuffer: true });
+renderer.setSize(width, height);
+renderer.setPixelRatio(window.devicePixelRatio);
+$container.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(35, width / height, 0.1, 100);
+camera.position.set(0, 0, 8);
+scene.add(camera);
+
+scene.add(new THREE.AmbientLight(0xffffff, 0.15));
+const dirLight = new THREE.DirectionalLight(0xffffff, 5);
+dirLight.position.set(3, 2, 3);
+const lightRig = new THREE.Group().add(dirLight);
+scene.add(lightRig);
+
+// Three spheres sharing a single geometry
+const sphereGeometry = new THREE.SphereGeometry(0.8, 64, 64);
+
+// Sphere 1: built-in MeshStandardMaterial
+const standard = new THREE.Mesh(sphereGeometry, new THREE.MeshStandardMaterial());
+standard.position.set(-2.5, -0.25, 0);
+scene.add(standard);
+
+// Vertex wave deformation along the normal, with an optional rim light
+function applyWave(material, { rim = false } = {}) {
+  material.uniforms = {
+    uTime: { value: 0 },
+    uAmplitude: { value: 0.04 },
+    uFrequency: { value: new THREE.Vector3(3, 3, 3) },
+  };
+  if (rim) material.uniforms.uRim = { value: 0 };
+  material.onBeforeCompile = shader => {
+    Object.assign(shader.uniforms, material.uniforms);
+    shader.vertexShader = `
+      uniform float uTime;
+      uniform float uAmplitude;
+      uniform vec3 uFrequency;
+    ` + shader.vertexShader.replace('#include <begin_vertex>', `
+      #include <begin_vertex>
+      float w = sin(uTime + position.x * uFrequency.x)
+             + sin(uTime + position.y * uFrequency.y)
+             + sin(uTime + position.z * uFrequency.z);
+      transformed += normal * w * uAmplitude;
+    `);
+    if (rim) {
+      shader.fragmentShader = `
+        uniform float uRim;
+      ` + shader.fragmentShader.replace('#include <dithering_fragment>', `
+        #include <dithering_fragment>
+        gl_FragColor.rgb += pow(1.0 - max(vNormal.z, 0.0), 3.0) * uRim;
+      `);
+    }
+  };
+  return material;
+}
+
+// Sphere 2: MeshStandardMaterial with the wave vertex hook
+const waveMaterial = applyWave(new THREE.MeshStandardMaterial({ metalness: 0.4, roughness: 0.3 }), { rim: true });
+const waveSphere = new THREE.Mesh(sphereGeometry, waveMaterial);
+waveSphere.position.set(0, -0.25, 0);
+scene.add(waveSphere);
+
+// Sphere 3: MeshToonMaterial with a hard 2-band ramp for darker shadows
+const toonRamp = new THREE.DataTexture(new Uint8Array([17, 17, 17, 255, 255, 255, 255, 255]), 2, 1);
+toonRamp.magFilter = toonRamp.minFilter = THREE.NearestFilter;
+toonRamp.needsUpdate = true;
+
+const toonMaterial = applyWave(new THREE.MeshToonMaterial({ gradientMap: toonRamp }));
+const toon = new THREE.Mesh(sphereGeometry, toonMaterial);
+toon.position.set(2.5, -0.25, 0);
+scene.add(toon);
+
+// Animation with Three.js adapter
+
+// Rotate the light around the scene
+animate(lightRig, {
+  rotateY: 360,
+  duration: 6000,
+  loop: true,
+  ease: 'linear',
+});
+
+// Standard material fields auto-mapped through the mesh
+animate(standard, {
+  roughness: [1, 0.3, 1], // map to standard.material.roughness
+  metalness: [0, 0.5, 0], // map to standard.material.metalness
+  duration: 4000,
+  loop: true,
+});
+
+// Wave sphere uniforms
+animate(waveSphere, {
+  uTime: { to: Math.PI * 2, ease: 'linear' }, // map to waveMaterial.uniforms.uTime.value
+  uFrequencyX: () => utils.random(3, 10, 1), // map to waveMaterial.uniforms.uFrequency.value.x
+  uFrequencyZ: () => utils.random(3, 10, 1), // map to waveMaterial.uniforms.uFrequency.value.z
+  uAmplitude: () => utils.random(0.02, 0.08, 2), // map to waveMaterial.uniforms.uAmplitude.value
+  uRim: [0, 0.5, 0], // map to waveMaterial.uniforms.uRim.value
+  duration: 4000,
+  loop: true,
+  onLoop: self => self.refresh(),
+});
+
+// Toon sphere uniforms
+animate(toon, {
+  uTime: { to: Math.PI * 2, ease: 'linear' }, // map to toonMaterial.uniforms.uTime.value
+  uFrequencyX: () => utils.random(50, 100),
+  uFrequencyZ: () => utils.random(50, 100),
+  uAmplitude: () => utils.random(0.05, 0.1, 2),
+  duration: 3000,
+  loop: true,
+  onLoop: self => self.refresh(),
+});
+
+// Shared color cycle across all three spheres
+animate([standard, waveSphere, toon], {
+  color: ['var(--hex-green-1)', 'var(--hex-sky-1)', 'var(--hex-yellow-1)', 'var(--hex-green-1)'],
+  duration: 6000,
+  loop: true,
+});
+
+createTimer({ onUpdate: () => renderer.render(scene, camera) });return function() {
+sphereGeometry.dispose();
+standard.material.dispose();
+waveMaterial.dispose();
+toonMaterial.dispose();
+toonRamp.dispose();
+renderer.dispose();}
+
+}
+</script>
+      </div>
+  <div class="docs-nav-menu ui-group">
+              <button class="ui-input code-edit-button" title="Edit example on CodePen"><svg class="icon" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke-width="1.75"><polygon stroke="currentColor" points="13.5 8.5 7.5 14.5 7.5 17.5 10.5 17.5 16.5 11.5"/><path stroke="currentColor" d="M18.0857864,7.08578644 L17.9142136,6.91421356 C17.133165,6.13316498 15.866835,6.13316498 15.0857864,6.91421356 L13.5,8.5 L13.5,8.5 L16.5,11.5 L18.0857864,9.91421356 C18.866835,9.13316498 18.866835,7.86683502 18.0857864,7.08578644 Z"/></g></svg></button>
+          <button class="ui-input demo-reload-button" data-id="adapters-threejs-adapter-materials-and-uniforms" title="Refresh demo"><svg class="icon" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18.0104076,5.98959236 L18.0097074,10.8757002 L13.1243067,10.8749931 L14.9168155,9.08318453 C14.7588711,8.92524016 14.591305,8.78278169 14.416004,8.65580911 L14.2448263,8.53829933 L14.1371098,8.47076625 L13.9480605,8.36293733 L13.7659116,8.27106673 L13.6639309,8.22427402 L13.527,8.16859236 L13.3619515,8.10538106 L13.0709847,8.01574221 L12.8718507,7.96768109 L12.7151297,7.93698408 L12.5212881,7.90777003 L12.4261665,7.89693978 L12.2097893,7.88030511 L11.9960663,7.87500186 L11.7823517,7.88071033 L11.5786024,7.89645013 L11.2618565,7.94085619 L11.0866744,7.97645921 L10.7825793,8.05787657 L10.5824409,8.12517064 L10.3734129,8.20804866 L10.1970153,8.28864689 L10.1108524,8.33204891 C9.99719576,8.3907053 9.8866159,8.45448924 9.77941876,8.52309484 L9.59973855,8.64452049 L9.35092327,8.83790906 C9.18556048,8.97659012 9.03123567,9.12800249 8.88945733,9.29063767 L8.74812474,9.4614153 L8.68958969,9.53851461 L8.60105067,9.66146194 L8.47414064,9.85783057 L8.39504795,9.9934838 L8.32936425,10.1155307 L8.23929415,10.3023761 C8.15831703,10.4818452 8.09083992,10.6659201 8.0368628,10.8530651 C7.93143024,11.2167272 7.875,11.6017736 7.875,12 C7.875,14.2781746 9.72182541,16.125 12,16.125 C13.9333525,16.125 15.5560509,14.7949318 16.0029785,12.9999121 L17.7901334,13.0005982 C17.3151731,15.7686406 14.9035699,17.875 12,17.875 C8.75532709,17.875 6.125,15.2446729 6.125,12 C6.125,11.2278045 6.27397809,10.4904048 6.54476016,9.8149748 L6.66977806,9.52595215 L6.8191583,9.22642108 L6.94536978,9.00296435 L7.0375393,8.85370907 L7.11693936,8.73128812 L7.27481186,8.50749878 L7.48447137,8.24100422 L7.65875746,8.04139229 L7.84574766,7.84574766 L7.97056232,7.72450669 L8.22033943,7.50182263 L8.48683851,7.29064127 L8.53289754,7.2566322 C8.6990325,7.1345321 8.87017642,7.02246737 9.04549311,6.92030533 L9.38637864,6.73693467 L9.60279001,6.63472714 L9.70370878,6.59066027 L9.9093334,6.50787023 L10.1516638,6.42194344 L10.3754461,6.3529011 L10.559856,6.30280265 L10.8574265,6.2365504 L11.0895665,6.19555985 L11.3001989,6.16657685 L11.5356036,6.14327045 L11.7631086,6.12971107 L12,6.125 C12.1257143,6.125 12.2507365,6.12898444 12.3749241,6.13685601 L12.7168017,6.16862972 L13.0038549,6.21082943 L13.2075613,6.2497529 L13.4423976,6.30388598 L13.6921015,6.37276113 L14.0328644,6.48681143 L14.3072123,6.59536992 L14.591522,6.72568265 L14.6764297,6.7689309 L14.8635074,6.86845043 L15.0861432,6.99982731 L15.3048531,7.14170066 L15.5309991,7.30359276 L15.7300123,7.46012938 L15.9070204,7.61160776 L16.1542523,7.84574766 L18.0104076,5.98959236 Z"/></svg></button>
+        <button class="ui-input minimise-demo-button" title="Minimize demo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g id="minimize" fill="none" fill-rule="evenodd">
+    <path id="Shape" fill="#FFFFFF" fill-rule="nonzero" d="M16.167 6.125a3.375 3.375 0 0 1 3.37 3.19l.005.185v5a3.375 3.375 0 0 1-3.19 3.37l-.185.005H7.833a3.375 3.375 0 0 1-3.37-3.19l-.005-.185v-5a3.375 3.375 0 0 1 3.19-3.37l.185-.005h8.334zm0 1.75H7.833c-.85 0-1.548.653-1.619 1.485l-.006.14v5c0 .85.653 1.548 1.485 1.619l.14.006h8.334c.85 0 1.548-.653 1.619-1.485l.006-.14v-5c0-.85-.653-1.548-1.485-1.619l-.14-.006zM16 12.625v1.75h-6v-1.75h6z"/>
+  </g>
+</svg>
+</button>
+  </div>
+</article>
+<article class="docs-demo" data-id="adapters-threejs-adapter-threejs-instanced-and-batched-meshes" data-color="15">
+  <header class="docs-demo-header">
+    <h2 class="text-ui">
+      Three.js instanced meshes                      </h2>
+  </header>
+  <div id="adapters-threejs-adapter-threejs-instanced-and-batched-meshes" class="docs-demo-content">
+    <style async class="docs-demo-css">
+        </style>
+    <div class="docs-demo-html docs-demo-live demo">
+    <div class="full-container"></div>        </div>
+    <div class="docs-demo-html docs-demo-template">
+    <div class="full-container"></div>        </div>
+    <script class="docs-demo-js">
+window.demos['adapters-threejs-adapter-threejs-instanced-and-batched-meshes'] = function(
+  ctx,
+  animate,
+  createTimeline,
+  createTimer,
+  createAnimatable,
+  createDraggable,
+  createLayout,
+  createScope,
+  onScroll,
+  engine,
+  eases,
+  steps,
+  linear,
+  irregular,
+  spring,
+  cubicBezier,
+  stagger,
+  utils,
+  svg,
+  waapi,
+  text,
+  splitText,
+  scrambleText,
+  createViewer,
+  getInstances,
+  commitChanges,
+) {
+// Three.js setup
+
+const [ $container ] = utils.$('.full-container');
+const { width, height } = $container.getBoundingClientRect();
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, preserveDrawingBuffer: true });
+renderer.setSize(width, height);
+renderer.setPixelRatio(window.devicePixelRatio);
+$container.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(50, width / height, 0.01, 100);
+camera.position.set(0, 0, 1.5);
+scene.add(camera);
+
+scene.add(new THREE.AmbientLight(0xffffff, 0.35));
+const light = new THREE.DirectionalLight(0xffffff, 2);
+light.position.set(2, 3, 4);
+scene.add(light);
+
+const gridSize = 6; // cubes per axis
+const cellSize = 2 / gridSize; // size of each cube
+const spread = (gridSize - 1) / 2 * cellSize; // distance from center to the outer cubes
+const geometry = new THREE.BoxGeometry(cellSize, cellSize, cellSize);
+const material = new THREE.MeshLambertMaterial();
+const mesh = new THREE.InstancedMesh(geometry, material, gridSize * gridSize * gridSize);
+scene.add(mesh);
+
+// Animation with Three.js adapter
+
+const instances = getInstances(mesh);
+const palette = ['red', 'orange', 'yellow', 'green', 'sky', 'purple', 'pink']
+  .map(name => utils.get($container, `--hex-${name}-1`));
+const gridAxis = (axis, span = spread) => stagger([-span, span], { grid: [gridSize, gridSize, gridSize], axis });
+
+// Slowly rotate the whole mesh
+animate(mesh, {
+  rotateY: 360,
+  rotateX: 360,
+  duration: 24000,
+  loop: true,
+  ease: 'linear',
+});
+
+// Color, scale and spread each instance, staggered from the center
+animate(instances, {
+  color: palette,
+  x: [gridAxis('x', spread * .25), gridAxis('x')],
+  y: [gridAxis('y', spread * .25), gridAxis('y')],
+  z: [gridAxis('z', spread * .25), gridAxis('z')],
+  scale: [.1, .25, .1],
+  delay: stagger([0, 3000], { grid: [gridSize, gridSize, gridSize], from: 'center', reversed: true }),
+  duration: 2000,
+  loopDelay: 500,
+  loop: true,
+  alternate: true,
+  ease: 'inOutQuad',
+});
+
+createTimer({ onUpdate: () => renderer.render(scene, camera) });return function() {
+mesh.dispose();
+geometry.dispose();
+material.dispose();
+renderer.dispose();}
+
+}
+</script>
+      </div>
+  <div class="docs-nav-menu ui-group">
+              <button class="ui-input code-edit-button" title="Edit example on CodePen"><svg class="icon" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke-width="1.75"><polygon stroke="currentColor" points="13.5 8.5 7.5 14.5 7.5 17.5 10.5 17.5 16.5 11.5"/><path stroke="currentColor" d="M18.0857864,7.08578644 L17.9142136,6.91421356 C17.133165,6.13316498 15.866835,6.13316498 15.0857864,6.91421356 L13.5,8.5 L13.5,8.5 L16.5,11.5 L18.0857864,9.91421356 C18.866835,9.13316498 18.866835,7.86683502 18.0857864,7.08578644 Z"/></g></svg></button>
+          <button class="ui-input demo-reload-button" data-id="adapters-threejs-adapter-threejs-instanced-and-batched-meshes" title="Refresh demo"><svg class="icon" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18.0104076,5.98959236 L18.0097074,10.8757002 L13.1243067,10.8749931 L14.9168155,9.08318453 C14.7588711,8.92524016 14.591305,8.78278169 14.416004,8.65580911 L14.2448263,8.53829933 L14.1371098,8.47076625 L13.9480605,8.36293733 L13.7659116,8.27106673 L13.6639309,8.22427402 L13.527,8.16859236 L13.3619515,8.10538106 L13.0709847,8.01574221 L12.8718507,7.96768109 L12.7151297,7.93698408 L12.5212881,7.90777003 L12.4261665,7.89693978 L12.2097893,7.88030511 L11.9960663,7.87500186 L11.7823517,7.88071033 L11.5786024,7.89645013 L11.2618565,7.94085619 L11.0866744,7.97645921 L10.7825793,8.05787657 L10.5824409,8.12517064 L10.3734129,8.20804866 L10.1970153,8.28864689 L10.1108524,8.33204891 C9.99719576,8.3907053 9.8866159,8.45448924 9.77941876,8.52309484 L9.59973855,8.64452049 L9.35092327,8.83790906 C9.18556048,8.97659012 9.03123567,9.12800249 8.88945733,9.29063767 L8.74812474,9.4614153 L8.68958969,9.53851461 L8.60105067,9.66146194 L8.47414064,9.85783057 L8.39504795,9.9934838 L8.32936425,10.1155307 L8.23929415,10.3023761 C8.15831703,10.4818452 8.09083992,10.6659201 8.0368628,10.8530651 C7.93143024,11.2167272 7.875,11.6017736 7.875,12 C7.875,14.2781746 9.72182541,16.125 12,16.125 C13.9333525,16.125 15.5560509,14.7949318 16.0029785,12.9999121 L17.7901334,13.0005982 C17.3151731,15.7686406 14.9035699,17.875 12,17.875 C8.75532709,17.875 6.125,15.2446729 6.125,12 C6.125,11.2278045 6.27397809,10.4904048 6.54476016,9.8149748 L6.66977806,9.52595215 L6.8191583,9.22642108 L6.94536978,9.00296435 L7.0375393,8.85370907 L7.11693936,8.73128812 L7.27481186,8.50749878 L7.48447137,8.24100422 L7.65875746,8.04139229 L7.84574766,7.84574766 L7.97056232,7.72450669 L8.22033943,7.50182263 L8.48683851,7.29064127 L8.53289754,7.2566322 C8.6990325,7.1345321 8.87017642,7.02246737 9.04549311,6.92030533 L9.38637864,6.73693467 L9.60279001,6.63472714 L9.70370878,6.59066027 L9.9093334,6.50787023 L10.1516638,6.42194344 L10.3754461,6.3529011 L10.559856,6.30280265 L10.8574265,6.2365504 L11.0895665,6.19555985 L11.3001989,6.16657685 L11.5356036,6.14327045 L11.7631086,6.12971107 L12,6.125 C12.1257143,6.125 12.2507365,6.12898444 12.3749241,6.13685601 L12.7168017,6.16862972 L13.0038549,6.21082943 L13.2075613,6.2497529 L13.4423976,6.30388598 L13.6921015,6.37276113 L14.0328644,6.48681143 L14.3072123,6.59536992 L14.591522,6.72568265 L14.6764297,6.7689309 L14.8635074,6.86845043 L15.0861432,6.99982731 L15.3048531,7.14170066 L15.5309991,7.30359276 L15.7300123,7.46012938 L15.9070204,7.61160776 L16.1542523,7.84574766 L18.0104076,5.98959236 Z"/></svg></button>
+        <button class="ui-input minimise-demo-button" title="Minimize demo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g id="minimize" fill="none" fill-rule="evenodd">
+    <path id="Shape" fill="#FFFFFF" fill-rule="nonzero" d="M16.167 6.125a3.375 3.375 0 0 1 3.37 3.19l.005.185v5a3.375 3.375 0 0 1-3.19 3.37l-.185.005H7.833a3.375 3.375 0 0 1-3.37-3.19l-.005-.185v-5a3.375 3.375 0 0 1 3.19-3.37l.185-.005h8.334zm0 1.75H7.833c-.85 0-1.548.653-1.619 1.485l-.006.14v5c0 .85.653 1.548 1.485 1.619l.14.006h8.334c.85 0 1.548-.653 1.619-1.485l.006-.14v-5c0-.85-.653-1.548-1.485-1.619l-.14-.006zM16 12.625v1.75h-6v-1.75h6z"/>
+  </g>
+</svg>
+</button>
+  </div>
+</article>
+<article class="docs-demo" data-id="adapters-threejs-adapter-threejs-adapter-common-gotchas" data-color="15">
+  <header class="docs-demo-header">
+    <h2 class="text-ui">
+      Three.js common gotchas                      </h2>
+  </header>
+  <div id="adapters-threejs-adapter-threejs-adapter-common-gotchas" class="docs-demo-content dotted-grid">
+    <style async class="docs-demo-css">
+        </style>
+    <div class="docs-demo-html docs-demo-live demo">
+            </div>
+    <div class="docs-demo-html docs-demo-template">
+            </div>
+    <script class="docs-demo-js">
+window.demos['adapters-threejs-adapter-threejs-adapter-common-gotchas'] = function(
+  ctx,
+  animate,
+  createTimeline,
+  createTimer,
+  createAnimatable,
+  createDraggable,
+  createLayout,
+  createScope,
+  onScroll,
+  engine,
+  eases,
+  steps,
+  linear,
+  irregular,
+  spring,
+  cubicBezier,
+  stagger,
+  utils,
+  svg,
+  waapi,
+  text,
+  splitText,
+  scrambleText,
+  createViewer,
+  getInstances,
+  commitChanges,
 ) {
 
 }

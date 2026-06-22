@@ -9,13 +9,13 @@
   <meta name="description" content="A fast, multipurpose and lightweight JavaScript animation library">
   <meta property="og:title" content="frameRate | Animation playback settings | Animation | Documentation | Anime.js | JavaScript Animation Engine">
   <meta property="og:url" content="/documentation/animation/animation-playback-settings/framerate">
-  <meta property="og:image" content="https://animejs.com/media/pages/documentation/animation/animation-playback-settings/framerate/5277c55808-1777477874/generated-og-image.en.png">
+  <meta property="og:image" content="https://animejs.com/media/pages/documentation/animation/animation-playback-settings/framerate/5277c55808-1782139859/generated-og-image.en.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="600">
   <meta property="og:description" content="A fast, multipurpose and lightweight JavaScript animation library">
   <meta name="twitter:title" content="frameRate | Animation playback settings | Animation | Documentation | Anime.js | JavaScript Animation Engine">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://animejs.com/media/pages/documentation/animation/animation-playback-settings/framerate/5277c55808-1777477874/generated-og-image.en.png">
+  <meta name="twitter:image" content="https://animejs.com/media/pages/documentation/animation/animation-playback-settings/framerate/5277c55808-1782139859/generated-og-image.en.png">
   <meta name="twitter:description" content="A fast, multipurpose and lightweight JavaScript animation library">
   <link href="/assets/css/styles.css?v=4.4.1" rel="stylesheet"></head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-16LTPBS8QC"></script>
@@ -1643,6 +1643,10 @@
       <a class="docs-link" title="Stagger total" href="/documentation/utilities/stagger/stagger-parameters/stagger-total" data-id="utilities-stagger-stagger-parameters-stagger-total">
         total                              </a>
                 </li>
+          <li class="docs-nav-item" data-color="11">
+      <a class="docs-link" title="Stagger jitter" href="/documentation/utilities/stagger/stagger-parameters/stagger-jitter" data-id="utilities-stagger-stagger-parameters-stagger-jitter">
+        jitter                        <span class="badge">NEW</span>      </a>
+                </li>
   </ul>
           </li>
   </ul>
@@ -1907,6 +1911,38 @@
                 </li>
   </ul>
           </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Adapters" href="/documentation/adapters" data-id="adapters">
+        Adapters                        <span class="badge">NEW</span>      </a>
+                  <ul class="docs-nav-item">
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js adapter" href="/documentation/adapters/threejs-adapter" data-id="adapters-threejs-adapter">
+        Three.js                        <span class="badge">NEW</span>      </a>
+                  <ul class="docs-nav-item">
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js object properties" href="/documentation/adapters/threejs-adapter/threejs-object-property-adapter" data-id="adapters-threejs-adapter-threejs-object-property-adapter">
+        Object properties                              </a>
+                </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js extended transforms" href="/documentation/adapters/threejs-adapter/threejs-transforms-adapter" data-id="adapters-threejs-adapter-threejs-transforms-adapter">
+        Extended transforms                              </a>
+                </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js materials and uniforms" href="/documentation/adapters/threejs-adapter/materials-and-uniforms" data-id="adapters-threejs-adapter-materials-and-uniforms">
+        Materials & uniforms                              </a>
+                </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js instanced meshes" href="/documentation/adapters/threejs-adapter/threejs-instanced-and-batched-meshes" data-id="adapters-threejs-adapter-threejs-instanced-and-batched-meshes">
+        Instanced meshes                              </a>
+                </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js common gotchas" href="/documentation/adapters/threejs-adapter/threejs-adapter-common-gotchas" data-id="adapters-threejs-adapter-threejs-adapter-common-gotchas">
+        Common gotchas                              </a>
+                </li>
+  </ul>
+          </li>
+  </ul>
+          </li>
   </ul>
     </nav>
   </aside>
@@ -1947,7 +1983,7 @@ This value can be modified later with <code>animation.fps = 30</code>.</p>
 <p>The frame rate is capped to the monitor refresh rate or in some cases by the browser itself.</p>
 </div>
 <h2 id="default" class="heading-anchor"><a href="#default">Default</a></h2>
-<p><code>120</code></p>
+<p><code>240</code></p>
 <div class="block info">
 <p>To change the default value globally, update the <code>engine.defaults</code> object.</p>
 <pre><code class="language-js">import { engine } from 'animejs';
@@ -1967,7 +2003,7 @@ engine.defaults.frameRate = 30;</code></pre>
             </nav>
           </header>
           <div class="code-editor">
-            <pre class="is-active" data-language="js"><code class="hljs language-javascript">import { animate } from 'animejs';
+                        <pre class="is-active" data-language="js"><code class="hljs language-javascript">import { animate } from 'animejs';
 
 const [ $range ] = utils.$(&#039;.range&#039;);
 const [ $fps ] = utils.$(&#039;.fps&#039;);

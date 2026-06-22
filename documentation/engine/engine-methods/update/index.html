@@ -9,13 +9,13 @@
   <meta name="description" content="A fast, multipurpose and lightweight JavaScript animation library">
   <meta property="og:title" content="update() | Engine methods | Engine | Documentation | Anime.js | JavaScript Animation Engine">
   <meta property="og:url" content="/documentation/engine/engine-methods/update">
-  <meta property="og:image" content="https://animejs.com/media/pages/documentation/engine/engine-methods/update/3e4607963b-1777477891/generated-og-image.en.png">
+  <meta property="og:image" content="https://animejs.com/media/pages/documentation/engine/engine-methods/update/3e4607963b-1782139876/generated-og-image.en.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="600">
   <meta property="og:description" content="A fast, multipurpose and lightweight JavaScript animation library">
   <meta name="twitter:title" content="update() | Engine methods | Engine | Documentation | Anime.js | JavaScript Animation Engine">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://animejs.com/media/pages/documentation/engine/engine-methods/update/3e4607963b-1777477891/generated-og-image.en.png">
+  <meta name="twitter:image" content="https://animejs.com/media/pages/documentation/engine/engine-methods/update/3e4607963b-1782139876/generated-og-image.en.png">
   <meta name="twitter:description" content="A fast, multipurpose and lightweight JavaScript animation library">
   <link href="/assets/css/styles.css?v=4.4.1" rel="stylesheet"></head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-16LTPBS8QC"></script>
@@ -1643,6 +1643,10 @@
       <a class="docs-link" title="Stagger total" href="/documentation/utilities/stagger/stagger-parameters/stagger-total" data-id="utilities-stagger-stagger-parameters-stagger-total">
         total                              </a>
                 </li>
+          <li class="docs-nav-item" data-color="11">
+      <a class="docs-link" title="Stagger jitter" href="/documentation/utilities/stagger/stagger-parameters/stagger-jitter" data-id="utilities-stagger-stagger-parameters-stagger-jitter">
+        jitter                        <span class="badge">NEW</span>      </a>
+                </li>
   </ul>
           </li>
   </ul>
@@ -1907,6 +1911,38 @@
                 </li>
   </ul>
           </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Adapters" href="/documentation/adapters" data-id="adapters">
+        Adapters                        <span class="badge">NEW</span>      </a>
+                  <ul class="docs-nav-item">
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js adapter" href="/documentation/adapters/threejs-adapter" data-id="adapters-threejs-adapter">
+        Three.js                        <span class="badge">NEW</span>      </a>
+                  <ul class="docs-nav-item">
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js object properties" href="/documentation/adapters/threejs-adapter/threejs-object-property-adapter" data-id="adapters-threejs-adapter-threejs-object-property-adapter">
+        Object properties                              </a>
+                </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js extended transforms" href="/documentation/adapters/threejs-adapter/threejs-transforms-adapter" data-id="adapters-threejs-adapter-threejs-transforms-adapter">
+        Extended transforms                              </a>
+                </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js materials and uniforms" href="/documentation/adapters/threejs-adapter/materials-and-uniforms" data-id="adapters-threejs-adapter-materials-and-uniforms">
+        Materials & uniforms                              </a>
+                </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js instanced meshes" href="/documentation/adapters/threejs-adapter/threejs-instanced-and-batched-meshes" data-id="adapters-threejs-adapter-threejs-instanced-and-batched-meshes">
+        Instanced meshes                              </a>
+                </li>
+          <li class="docs-nav-item" data-color="15">
+      <a class="docs-link" title="Three.js common gotchas" href="/documentation/adapters/threejs-adapter/threejs-adapter-common-gotchas" data-id="adapters-threejs-adapter-threejs-adapter-common-gotchas">
+        Common gotchas                              </a>
+                </li>
+  </ul>
+          </li>
+  </ul>
+          </li>
   </ul>
     </nav>
   </aside>
@@ -1961,17 +1997,19 @@ engine.update(); // Manual update call</code></pre>
             </nav>
           </header>
           <div class="code-editor">
-            <pre class="is-active" data-language="js"><code class="hljs language-javascript">import { engine, createTimeline, utils } from 'animejs';
+                        <pre class="is-active" data-language="js"><code class="hljs language-javascript">import { engine, animate, utils } from 'animejs';
+import * as THREE from 'three';
+import 'animejs/adapters/three';
 
 // Prevents Anime.js from using its own loop
 engine.useDefaultMainLoop = false;
 
-const [ $container ] = utils.$(&#039;.container&#039;);
+const [ $container ] = utils.$(&#039;.full-container&#039;);
 const color = utils.get($container, &#039;color&#039;);
 const { width, height } = $container.getBoundingClientRect();
 
-// Three.js setup, note that the global THREE object is defined globally
-const renderer = new THREE.WebGLRenderer({ alpha: true });
+// Three.js setup
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, preserveDrawingBuffer: true });
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(65, width / height, 0.1, 20);
 const geometry = new THREE.BoxGeometry(1, 1, 1);
@@ -1984,19 +2022,21 @@ camera.position.z = 5;
 
 function createAnimatedCube() {
   const cube = new THREE.Mesh(geometry, material);
-  const x = utils.random(-10, 10, 2);
-  const y = utils.random(-5, 5, 2);
-  const z = [-10, 7];
-  const r = () =&gt; utils.random(-Math.PI * 2, Math.PI * 2, 3);
-  const duration = 4000;
-  createTimeline({
-    delay: utils.random(0, duration),
-    defaults: { loop: true, duration, ease: &#039;inSine&#039;, },
-  })
-  .add(cube.position, { x, y, z }, 0)
-  .add(cube.rotation, { x: r, y: r, z: r }, 0)
-  .init();
+  const r = () =&gt; utils.random(-720, 720, 1);
   scene.add(cube);
+  // The three.js adapter maps x / y / z and rotateX / Y / Z (degrees) directly onto the mesh.
+  animate(cube, {
+    x: utils.random(-10, 10, 2),
+    y: utils.random(-5, 5, 2),
+    z: [-10, 7],
+    rotateX: r,
+    rotateY: r,
+    rotateZ: r,
+    delay: utils.random(0, 4000),
+    duration: 4000,
+    loop: true,
+    ease: &#039;inSine&#039;,
+  });
 }
 
 for (let i = 0; i &lt; 40; i++) {
@@ -2010,7 +2050,7 @@ function render() {
 
 // Calls the builtin Three.js animation loop
 renderer.setAnimationLoop(render);</code></pre>
-            <pre data-language="html"><code class="hljs language-html">&lt;div class=&quot;container large grid square-grid&quot;&gt;&lt;/div&gt;</code></pre>
+            <pre data-language="html"><code class="hljs language-html">&lt;div class=&quot;full-container&quot;&gt;&lt;/div&gt;</code></pre>
                       </div>
         </div>
       </section>
